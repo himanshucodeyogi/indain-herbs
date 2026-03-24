@@ -1,0 +1,132 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Quality & Certifications | Indian Herbs Specialities Pvt. Ltd." description="ISO 9001:2015, WHO-GMP, FAMI-QS, FSSAI certified — our commitment to international quality standards.">
+
+<!-- HERO -->
+<div class="page-hero">
+  <span class="badge" style="margin-bottom:1rem; display:inline-block;">International Standards</span>
+  <h1>Quality & Certifications</h1>
+  <p>Every product we make adheres to the highest global quality standards — because your trust and animal health are non-negotiable.</p>
+</div>
+
+<!-- COMMITMENT -->
+<section style="padding:5rem 0; background:white;">
+  <div class="container-max">
+    <div style="max-width:820px; margin:0 auto; text-align:center;">
+      <div class="badge reveal" style="margin-bottom:1rem;">Our Commitment</div>
+      <h2 class="section-title reveal" style="margin-top:0.75rem;">Quality is Non-Negotiable</h2>
+      <div class="divider reveal"></div>
+      <p class="reveal" style="color:#64748b; font-size:1.05rem; line-height:1.85; margin-bottom:1.5rem;">
+        At Indian Herbs, quality isn't just a department — it's a culture embedded in every step of our process, from raw material sourcing to the final product delivery. We maintain rigorous in-process and finished product testing using internationally validated methods.
+      </p>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px,1fr)); gap:1.5rem; margin:2.5rem 0;" class="reveal">
+        {[
+          { icon:'🌱', title:'Raw Material Testing',   desc:'Authentication of every medicinal plant by trained botanical experts' },
+          { icon:'⚗️', title:'In-Process Controls',   desc:'Multiple QC checkpoints during manufacturing to ensure consistency' },
+          { icon:'🧪', title:'Finished Product Testing', desc:'HPLC, GC-MS, microbiological, and stability tests before release' },
+          { icon:'📦', title:'Packaging Integrity',    desc:'Tamper-proof, moisture-resistant packaging to ensure product stability' },
+        ].map(item => (
+          <div style="background:var(--color-bg); border-radius:14px; padding:1.75rem 1.25rem; text-align:center; border:1px solid #e2e8f0;">
+            <div style="font-size:2rem; margin-bottom:0.75rem;">{item.icon}</div>
+            <h4 style="font-family:var(--font-heading); color:var(--color-primary); font-size:0.95rem; margin-bottom:0.5rem;">{item.title}</h4>
+            <p style="color:#64748b; font-size:0.82rem; line-height:1.6;">{item.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATES GRID -->
+<section style="padding:5rem 0; background:var(--color-bg);">
+  <div class="container-max">
+    <div style="text-align:center; margin-bottom:0.75rem;">
+      <div class="badge reveal">Accreditations</div>
+    </div>
+    <h2 class="section-title text-center reveal" style="margin-top:1rem;">Our Certifications</h2>
+    <div class="divider reveal"></div>
+    <p class="section-subtitle text-center reveal">Recognized and certified by the world's most trusted quality authorities.</p>
+
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px,1fr)); gap:1.75rem;">
+      {[
+        {
+          name:'ISO 9001:2015',
+          icon:'🏅',
+          color:'#166534',
+          title:'Quality Management System',
+          desc:'International standard for quality management — ensures consistent, high-quality products and services that meet customer and regulatory requirements.',
+        },
+        {
+          name:'ISO 14001:2015',
+          icon:'🌿',
+          color:'#0d9488',
+          title:'Environmental Management',
+          desc:'Demonstrates our commitment to minimizing our environmental impact through responsible manufacturing and waste management practices.',
+        },
+        {
+          name:'ISO 22000:2018',
+          icon:'🍃',
+          color:'#d97706',
+          title:'Food Safety Management',
+          desc:'Globally recognized standard ensuring food safety at every stage of the supply chain — critical for our animal nutrition products.',
+        },
+        {
+          name:'ISO 45001:2018',
+          icon:'⛑️',
+          color:'#0369a1',
+          title:'Occupational Health & Safety',
+          desc:'Ensures a safe and healthy workplace for all our employees — demonstrating our care for the people who craft our products.',
+        },
+        {
+          name:'WHO-GMP',
+          icon:'🌐',
+          color:'#7c3aed',
+          title:'World Health Organization GMP',
+          desc:'Good Manufacturing Practice certification from WHO — mandatory for pharmaceutical-grade products and export to regulated markets.',
+        },
+        {
+          name:'FAMI-QS',
+          icon:'🔍',
+          color:'#dc2626',
+          title:'Feed Additives Quality System',
+          desc:'European quality and safety standard for feed additives — opens doors to EU and other premium international markets.',
+        },
+        {
+          name:'FSSAI',
+          icon:'🇮🇳',
+          color:'#166534',
+          title:'Food Safety & Standards Authority of India',
+          desc:'License from India\'s apex food regulatory body — mandatory for all human wellness and food supplement products marketed in India.',
+        },
+        {
+          name:'Export House Certificate',
+          icon:'🚢',
+          color:'#0d9488',
+          title:'Recognized Export House',
+          desc:'Officially recognized as an Export House by the Government of India — reflecting our significant and consistent export performance.',
+        },
+      ].map(cert => (
+        <div class="cert-card reveal" style={`border-top: 4px solid ${cert.color};`}>
+          <div style={`width:56px; height:56px; background:${cert.color}15; border-radius:14px; display:flex; align-items:center; justify-content:center; font-size:1.75rem; margin:0 auto 1.25rem;`}>{cert.icon}</div>
+          <div style={`font-size:0.75rem; font-weight:700; color:${cert.color}; letter-spacing:0.08em; text-transform:uppercase; margin-bottom:0.5rem;`}>{cert.name}</div>
+          <h4 style="font-family:var(--font-heading); color:#1e293b; font-size:0.95rem; margin-bottom:0.75rem;">{cert.title}</h4>
+          <p style="color:#64748b; font-size:0.82rem; line-height:1.65;">{cert.desc}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- QUALITY BANNER -->
+<section style="padding:5rem 0;" class="section-bg-green">
+  <div class="container-max" style="text-align:center;">
+    <div style="font-size:4rem; margin-bottom:1.5rem;" class="reveal animate-float">🌟</div>
+    <h2 class="section-title reveal" style="color:#86efac;">Certified for the World. Trusted by Nature.</h2>
+    <div class="divider reveal"></div>
+    <p class="section-subtitle reveal">Our certifications are not just badges — they are a promise we make to every farmer, pet owner, and consumer who trusts our products.</p>
+    <a href="/contact" class="btn-primary reveal" style="margin-top:1rem;">Request Quality Dossier →</a>
+  </div>
+</section>
+</Layout>

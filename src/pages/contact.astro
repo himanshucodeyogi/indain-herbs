@@ -1,0 +1,231 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Contact Us | Indian Herbs Specialities Pvt. Ltd." description="Get in touch with Indian Herbs for bulk orders, export inquiries, product samples, or general questions.">
+
+<!-- HERO -->
+<div class="page-hero">
+  <span class="badge" style="margin-bottom:1rem; display:inline-block;">Get In Touch</span>
+  <h1>Contact Us</h1>
+  <p>Whether you're a bulk buyer, distributor, or simply curious — we'd love to hear from you.</p>
+</div>
+
+<!-- CONTACT SECTION -->
+<section style="padding:5rem 0; background:var(--color-bg);">
+  <div class="container-max">
+    <div style="display:grid; grid-template-columns:1fr 1.5fr; gap:3.5rem; align-items:start;" class="responsive-grid">
+
+      <!-- Contact Info -->
+      <div class="reveal">
+        <div class="badge" style="margin-bottom:1.25rem;">Reach Us</div>
+        <h2 class="section-title" style="text-align:left; font-size:2rem;">Let's Start a Conversation</h2>
+        <div class="divider" style="margin-left:0;"></div>
+        <p style="color:#64748b; line-height:1.8; margin-bottom:2rem;">
+          Our team is ready to assist you with product information, bulk pricing, export documentation, or any questions about our herbal solutions.
+        </p>
+
+        <!-- Info cards -->
+        <div style="display:flex; flex-direction:column; gap:1.25rem; margin-bottom:2.5rem;">
+          {[
+            {
+              icon:'📍',
+              title:'Corporate Headquarters',
+              info:'Sharda Nagar, Saharanpur - 247001, Uttar Pradesh, India',
+              link:'https://maps.google.com/?q=Saharanpur,Uttar+Pradesh,India',
+              linkText:'View on Google Maps →',
+            },
+            {
+              icon:'📞',
+              title:'Phone Number',
+              info:'+91 72538-88442',
+              link:'tel:+917253888442',
+              linkText:'Call Now',
+            },
+            {
+              icon:'✉️',
+              title:'Email Address',
+              info:'ihspl@indianherbs.org',
+              link:'mailto:ihspl@indianherbs.org',
+              linkText:'Send Email',
+            },
+            {
+              icon:'🕐',
+              title:'Business Hours',
+              info:'Monday – Saturday: 9:00 AM – 6:00 PM (IST)',
+              link:'',
+              linkText:'',
+            },
+          ].map(item => (
+            <div style="background:white; border-radius:14px; padding:1.25rem 1.5rem; box-shadow:0 2px 12px rgba(0,0,0,0.06); display:flex; gap:1rem; align-items:flex-start; border:1px solid #f1f5f9;">
+              <div style="font-size:1.5rem; flex-shrink:0; margin-top:0.1rem;">{item.icon}</div>
+              <div>
+                <div style="font-size:0.75rem; font-weight:700; color:var(--color-secondary); text-transform:uppercase; letter-spacing:0.07em; margin-bottom:0.3rem;">{item.title}</div>
+                <div style="color:#374151; font-weight:500; font-size:0.9rem;">{item.info}</div>
+                {item.link && (
+                  <a href={item.link} target={item.link.startsWith('http') ? '_blank' : '_self'} style="color:var(--color-accent); font-size:0.82rem; font-weight:600; margin-top:0.25rem; display:inline-block;">{item.linkText}</a>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <!-- Export badge -->
+        <div style="background:linear-gradient(135deg,#f0fdf4,#dcfce7); border:2px solid #86efac; border-radius:14px; padding:1.5rem;">
+          <div style="font-size:1.5rem; margin-bottom:0.5rem;">🌍</div>
+          <h4 style="font-family:var(--font-heading); color:var(--color-primary); margin-bottom:0.5rem; font-size:1rem;">International Inquiries Welcome</h4>
+          <p style="color:#64748b; font-size:0.85rem; line-height:1.6;">We export to 50+ countries. Our export team is experienced in handling documentation, regulatory approvals, and logistics for all major global markets.</p>
+        </div>
+      </div>
+
+      <!-- Inquiry Form -->
+      <div class="card reveal delay-200" style="padding:2.5rem;">
+        <h3 style="font-family:var(--font-heading); color:var(--color-primary); font-size:1.4rem; margin-bottom:0.5rem;">Send an Inquiry</h3>
+        <p style="color:#64748b; font-size:0.875rem; margin-bottom:2rem;">Fill in the form and our team will respond within 24 hours.</p>
+
+        <form id="contact-form" novalidate style="display:flex; flex-direction:column; gap:1.25rem;">
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.25rem;" class="form-row">
+            <div>
+              <label for="first-name" style="display:block; font-size:0.82rem; font-weight:600; color:#374151; margin-bottom:0.45rem;">First Name *</label>
+              <input type="text" id="first-name" name="first_name" class="form-input" placeholder="Rajesh" required />
+            </div>
+            <div>
+              <label for="last-name" style="display:block; font-size:0.82rem; font-weight:600; color:#374151; margin-bottom:0.45rem;">Last Name *</label>
+              <input type="text" id="last-name" name="last_name" class="form-input" placeholder="Kumar" required />
+            </div>
+          </div>
+
+          <div>
+            <label for="email" style="display:block; font-size:0.82rem; font-weight:600; color:#374151; margin-bottom:0.45rem;">Email Address *</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="you@company.com" required />
+          </div>
+
+          <div>
+            <label for="phone" style="display:block; font-size:0.82rem; font-weight:600; color:#374151; margin-bottom:0.45rem;">Phone Number</label>
+            <input type="tel" id="phone" name="phone" class="form-input" placeholder="+91 98765 43210" />
+          </div>
+
+          <div>
+            <label for="company" style="display:block; font-size:0.82rem; font-weight:600; color:#374151; margin-bottom:0.45rem;">Company / Organisation</label>
+            <input type="text" id="company" name="company" class="form-input" placeholder="Your Company Name" />
+          </div>
+
+          <div>
+            <label for="country" style="display:block; font-size:0.82rem; font-weight:600; color:#374151; margin-bottom:0.45rem;">Country</label>
+            <input type="text" id="country" name="country" class="form-input" placeholder="India / Germany / USA..." />
+          </div>
+
+          <div>
+            <label for="inquiry-type" style="display:block; font-size:0.82rem; font-weight:600; color:#374151; margin-bottom:0.45rem;">Inquiry Type *</label>
+            <select id="inquiry-type" name="inquiry_type" class="form-select" required>
+              <option value="" disabled selected>— Select inquiry type —</option>
+              <option value="bulk_order">Bulk Order</option>
+              <option value="export">Export Inquiry</option>
+              <option value="sample">Product Sample Request</option>
+              <option value="distributor">Become a Distributor</option>
+              <option value="research">Research Collaboration</option>
+              <option value="general">General Question</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="product-interest" style="display:block; font-size:0.82rem; font-weight:600; color:#374151; margin-bottom:0.45rem;">Product / Division of Interest</label>
+            <select id="product-interest" name="product_interest" class="form-select">
+              <option value="" disabled selected>— Select a division —</option>
+              <option value="cattle">Cattle & Ruminants</option>
+              <option value="poultry">Poultry & Swine</option>
+              <option value="aquaculture">Aquaculture</option>
+              <option value="petfirst">PetFirst (Companion Animals)</option>
+              <option value="human">Human Wellness (Envin Bioceuticals)</option>
+              <option value="multiple">Multiple Products</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="message" style="display:block; font-size:0.82rem; font-weight:600; color:#374151; margin-bottom:0.45rem;">Message *</label>
+            <textarea id="message" name="message" class="form-textarea" rows={4} placeholder="Tell us what you're looking for, including quantities, preferred products, or any specific requirements..." required></textarea>
+          </div>
+
+          <!-- Success/Error msg -->
+          <div id="form-status" style="display:none; padding:1rem; border-radius:10px; font-size:0.875rem; font-weight:500;"></div>
+
+          <button type="submit" id="submit-btn" class="btn-primary" style="width:100%; justify-content:center; padding:1rem;">
+            <span id="btn-text">Send Inquiry →</span>
+          </button>
+
+          <p style="font-size:0.78rem; color:#94a3b8; text-align:center;">🔒 Your information is kept confidential and never shared with third parties.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAP -->
+<section style="padding:0 0 5rem;">
+  <div class="container-max">
+    <div class="reveal" style="border-radius:20px; overflow:hidden; box-shadow:0 8px 30px rgba(0,0,0,0.1); height:420px;">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224346.44556748376!2d77.64028!3d29.967455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ebc8a45124fd7%3A0x5e8f7f295ede4fb6!2sSaharanpur%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+        width="100%"
+        height="100%"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Indian Herbs Saharanpur Office Location"
+      ></iframe>
+    </div>
+  </div>
+</section>
+
+<style>
+  @media (max-width: 768px) {
+    .responsive-grid { grid-template-columns: 1fr !important; }
+    .form-row { grid-template-columns: 1fr !important; }
+  }
+</style>
+
+<script>
+  const form = document.getElementById('contact-form') as HTMLFormElement;
+  const statusEl  = document.getElementById('form-status') as HTMLElement;
+  const submitBtn = document.getElementById('submit-btn') as HTMLButtonElement;
+  const btnText   = document.getElementById('btn-text') as HTMLElement;
+
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    // Simple validation
+    const required = form.querySelectorAll('[required]');
+    let valid = true;
+    required.forEach((el: Element) => {
+      const input = el as HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement;
+      if (!input.value.trim()) { valid = false; input.style.borderColor = '#ef4444'; }
+      else input.style.borderColor = '';
+    });
+
+    if (!valid) {
+      statusEl.style.display = 'block';
+      statusEl.style.background = '#fef2f2';
+      statusEl.style.color = '#dc2626';
+      statusEl.style.border = '1px solid #fecaca';
+      statusEl.textContent = '⚠️ Please fill in all required fields marked with *.';
+      return;
+    }
+
+    // Simulate submission
+    btnText.textContent = 'Sending...';
+    submitBtn.disabled = true;
+
+    await new Promise(r => setTimeout(r, 1500));
+
+    statusEl.style.display = 'block';
+    statusEl.style.background = '#f0fdf4';
+    statusEl.style.color = '#166534';
+    statusEl.style.border = '1px solid #86efac';
+    statusEl.textContent = '✅ Thank you! Your inquiry has been submitted. Our team will contact you within 24 hours.';
+    form.reset();
+    btnText.textContent = 'Send Inquiry →';
+    submitBtn.disabled = false;
+  });
+</script>
+</Layout>

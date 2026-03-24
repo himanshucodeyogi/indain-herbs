@@ -1,0 +1,180 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Research & Innovation | Indian Herbs Specialities Pvt. Ltd." description="Explore our R&D philosophy, state-of-the-art laboratories, 22+ patents, and 1250+ research publications.">
+
+<!-- HERO -->
+<div class="page-hero">
+  <span class="badge" style="margin-bottom:1rem; display:inline-block;">Science Meets Nature</span>
+  <h1>Research & Innovation</h1>
+  <p>Harnessing the power of Nutrigenomics, Transcriptomics & Phytogenics — redefining herbal science for the modern world.</p>
+</div>
+
+<!-- R&D PHILOSOPHY -->
+<section style="padding:5rem 0; background:white;">
+  <div class="container-max">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center; max-width:1100px; margin:0 auto;" class="responsive-grid">
+      <div class="reveal">
+        <div class="badge" style="margin-bottom:1.25rem;">Our Philosophy</div>
+        <h2 class="section-title" style="text-align:left;">Where Ancient Wisdom Meets Modern Science</h2>
+        <div class="divider" style="margin-left:0;"></div>
+        <p style="color:#64748b; line-height:1.8; margin-bottom:1.25rem;">
+          Our R&D philosophy is rooted in evidence-based validation of traditional Ayurvedic knowledge. Using cutting-edge technologies like <strong>Nutrigenomics</strong> (studying how nutrition affects gene expression) and <strong>Transcriptomics</strong> (analyzing gene expression patterns), we unlock the molecular secrets of herbs.
+        </p>
+        <p style="color:#64748b; line-height:1.8; margin-bottom:2rem;">
+          This science-forward approach allows us to create standardized, reproducible, and clinically validated herbal formulations — giving nature's remedies the scientific credence they deserve.
+        </p>
+        <div style="display:flex; flex-wrap:wrap; gap:1rem;">
+          {['Nutrigenomics', 'Transcriptomics', 'Phytogenics', 'Phytochemistry'].map(tag => (
+            <span style="background:#f0fdf4; border:1px solid #86efac; color:var(--color-primary); font-size:0.8rem; padding:0.35rem 1rem; border-radius:50px; font-weight:500;">{tag}</span>
+          ))}
+        </div>
+      </div>
+      <div class="reveal delay-200" style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+        {[
+          { num:'22+',   label:'Patents',         icon:'📋', color:'#d97706' },
+          { num:'1250+', label:'Research Papers', icon:'📚', color:'#0d9488' },
+          { num:'200+',  label:'Scientists',      icon:'🔬', color:'#166534' },
+          { num:'50+',   label:'Years Research',  icon:'📅', color:'#7c3aed' },
+        ].map(item => (
+          <div style={`background:white; border-radius:16px; padding:1.75rem 1.25rem; text-align:center; box-shadow:0 4px 20px rgba(0,0,0,0.07); border-top:4px solid ${item.color};`}>
+            <div style="font-size:2rem; margin-bottom:0.75rem;">{item.icon}</div>
+            <div style={`font-family:var(--font-heading); font-size:2rem; font-weight:900; color:${item.color};`}>{item.num}</div>
+            <div style="color:#64748b; font-size:0.8rem; margin-top:0.25rem;">{item.label}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FACILITIES TABS -->
+<section style="padding:5rem 0; background:var(--color-bg);">
+  <div class="container-max">
+    <div style="text-align:center; margin-bottom:0.75rem;">
+      <div class="badge reveal">Our Laboratories</div>
+    </div>
+    <h2 class="section-title text-center reveal" style="margin-top:1rem;">World-Class Research Facilities</h2>
+    <div class="divider reveal"></div>
+    <p class="section-subtitle text-center reveal">Five specialized labs working in synergy to deliver breakthrough herbal innovations.</p>
+
+    <!-- Tab Buttons -->
+    <div id="tab-buttons" style="display:flex; flex-wrap:wrap; gap:0.75rem; justify-content:center; margin-bottom:2.5rem;">
+      {['Phytochemistry', 'Analytical & Instrumentation', 'Formulation', 'Microbiology', 'Pharmacology'].map((tab, i) => (
+        <button
+          class={`tab-btn ${i === 0 ? 'active' : ''}`}
+          data-tab={i}
+        >
+          {tab}
+        </button>
+      ))}
+    </div>
+
+    <!-- Tab Panels -->
+    <div id="tab-panels">
+      {[
+        {
+          title: 'Phytochemistry Lab',
+          icon: '🌿',
+          desc: 'Our Phytochemistry Lab is the heart of our research — extracting, isolating, and characterizing bioactive compounds from hundreds of medicinal plants. Advanced techniques like thin-layer chromatography (TLC) and column chromatography help identify key phytochemicals responsible for therapeutic activity.',
+          features: ['Bioactive compound extraction', 'Phytochemical fingerprinting', 'Plant authenticated repository', 'Standardization protocols'],
+          bg: '#f0fdf4',
+        },
+        {
+          title: 'Analytical & Instrumentation Lab',
+          icon: '🔭',
+          desc: 'Equipped with state-of-the-art instruments including High-Performance Liquid Chromatography (HPLC), Gas Chromatography–Mass Spectrometry (GC-MS), UV-Visible Spectrophotometry, and atomic absorption spectroscopy for accurate quantification and quality control.',
+          features: ['HPLC Analysis', 'GC-MS Profiling', 'UV-Vis Spectrophotometry', 'Atomic Absorption Spectroscopy'],
+          bg: '#f0fdfa',
+        },
+        {
+          title: 'Formulation Lab',
+          icon: '⚗️',
+          desc: 'Our Formulation Lab transforms raw herbal extracts into stable, effective products. From powder blends and granules to liquid emulsions and pellets — our scientists optimize bioavailability, palatability, and shelf stability for diverse product formats.',
+          features: ['Feed additive formulation', 'Emulsion & suspension tech', 'Microencapsulation', 'Stability testing'],
+          bg: '#fef9ee',
+        },
+        {
+          title: 'Microbiology Lab',
+          icon: '🦠',
+          desc: 'A fully equipped microbiology laboratory ensures the safety and efficacy of all our products. From antimicrobial activity testing of herbs to sterility tests and contamination control, we maintain the highest standards of microbiological safety across our product range.',
+          features: ['Antimicrobial zone inhibition', 'Sterility testing', 'Pathogen identification', 'Biofilm studies'],
+          bg: '#f5f3ff',
+        },
+        {
+          title: 'Pharmacology Lab',
+          icon: '💉',
+          desc: 'Our Pharmacology Lab conducts in-vitro and in-vivo studies to validate the therapeutic claims of our herbal products. Anti-inflammatory, immunomodulatory, hepatoprotective, and growth-promoting activities are systematically evaluated before any product reaches the market.',
+          features: ['In-vitro cell studies', 'Anti-inflammatory testing', 'Immunomodulation assays', 'Safety & toxicology'],
+          bg: '#fff1f2',
+        },
+      ].map((panel, i) => (
+        <div
+          id={`tab-panel-${i}`}
+          style={`display:${i === 0 ? 'flex' : 'none'}; gap:3rem; background:${panel.bg}; border-radius:20px; padding:3rem; align-items:center; flex-wrap:wrap;`}
+        >
+          <div style="font-size:5rem; flex-shrink:0; animation:float 4s ease-in-out infinite;">{panel.icon}</div>
+          <div style="flex:1; min-width:280px;">
+            <h3 style="font-family:var(--font-heading); color:var(--color-primary); font-size:1.5rem; margin-bottom:1rem;">{panel.title}</h3>
+            <p style="color:#475569; line-height:1.8; margin-bottom:1.5rem;">{panel.desc}</p>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.75rem;">
+              {panel.features.map(f => (
+                <div style="display:flex; align-items:center; gap:0.5rem; font-size:0.875rem; color:#374151;">
+                  <span style="color:var(--color-secondary); font-size:1rem;">✓</span> {f}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section style="padding:5rem 0;" class="section-bg-green">
+  <div class="container-max">
+    <h2 class="section-title text-center reveal" style="color:#86efac; margin-bottom:1rem;">Research Achievements</h2>
+    <div class="divider reveal"></div>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:2rem; margin-top:2rem;">
+      {[
+        { icon:'📋', num:'22+',   label:'Patents Granted',            desc:'Novel herbal formulations patented globally for animal health, growth promotion, and immunity.' },
+        { icon:'📚', num:'1250+', label:'Research Publications',       desc:'Peer-reviewed papers validating the science behind our phytogenic formulations worldwide.' },
+        { icon:'🎓', num:'200+',  label:'Doctoral Studies on Products', desc:'Scientists who have completed their Ph.D. / M.V.Sc. dissertations based on our products.' },
+        { icon:'🌿', num:'500+',  label:'Herbs Studied',               desc:'An extensive repository of medicinal plant species studied for bioactive compounds.' },
+      ].map(item => (
+        <div class="card reveal" style="padding:2.25rem; background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.15); backdrop-filter:blur(10px); text-align:center;">
+          <div style="font-size:2.5rem; margin-bottom:1rem;">{item.icon}</div>
+          <div style="font-size:2.75rem; font-weight:900; font-family:var(--font-heading); color:#fbbf24; margin-bottom:0.5rem;">{item.num}</div>
+          <h4 style="color:white; font-size:1rem; margin-bottom:0.75rem;">{item.label}</h4>
+          <p style="color:#d1fae5; font-size:0.875rem; opacity:0.85; line-height:1.65;">{item.desc}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<script>
+  // Tab functionality
+  const buttons = document.querySelectorAll('#tab-buttons .tab-btn');
+  const panels  = document.querySelectorAll('[id^="tab-panel-"]');
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const idx = btn.getAttribute('data-tab');
+      buttons.forEach(b => b.classList.remove('active'));
+      panels.forEach((p: Element) => (p as HTMLElement).style.display = 'none');
+      btn.classList.add('active');
+      const panel = document.getElementById(`tab-panel-${idx}`);
+      if (panel) panel.style.display = 'flex';
+    });
+  });
+</script>
+
+<style>
+  @media (max-width: 768px) {
+    .responsive-grid { grid-template-columns: 1fr !important; }
+  }
+</style>
+</Layout>

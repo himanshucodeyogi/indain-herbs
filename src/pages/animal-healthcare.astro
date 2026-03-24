@@ -1,0 +1,142 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Animal Healthcare | Indian Herbs Specialities Pvt. Ltd." description="Comprehensive phytogenic solutions for cattle, poultry, swine, aquaculture, and companion animals.">
+
+<!-- HERO -->
+<div class="page-hero">
+  <span class="badge" style="margin-bottom:1rem; display:inline-block;">Veterinary Excellence</span>
+  <h1>Animal Healthcare</h1>
+  <p>Natural, science-backed phytogenic solutions for every animal species — improving health, productivity, and welfare.</p>
+</div>
+
+<!-- INTRO -->
+<section style="padding:4rem 0; background:white;">
+  <div class="container-max" style="text-align:center; max-width:760px;">
+    <p class="reveal" style="color:#64748b; font-size:1.1rem; line-height:1.85;">
+      Indian Herbs has been at the forefront of <strong>natural animal nutrition</strong> for over 70 years. Our phytogenic feed additives replace chemical growth promoters, reduce antibiotic dependency, and improve overall animal health — profitably and sustainably.
+    </p>
+  </div>
+</section>
+
+<!-- CATTLE & RUMINANTS -->
+<section style="padding:4rem 0; background:var(--color-bg);">
+  <div class="container-max">
+    <div style="display:flex; align-items:center; gap:1rem; margin-bottom:2rem;">
+      <div style="width:56px; height:56px; background:linear-gradient(135deg,var(--color-primary),var(--color-primary-light)); border-radius:14px; display:flex; align-items:center; justify-content:center; font-size:1.75rem;">🐄</div>
+      <div>
+        <h2 style="font-family:var(--font-heading); color:var(--color-primary); font-size:1.85rem;">Cattle & Ruminants</h2>
+        <p style="color:var(--color-secondary); font-size:0.9rem;">Milk yield enhancement | Reproductive health | Rumen optimization</p>
+      </div>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:1.5rem;">
+      {[
+        { name:'HerbMilk Plus',    cat:'Milk Enhancer',       desc:'Enhances milk yield and fat percentage in dairy animals using Shatavari, Fenugreek & Ashwagandha extracts.' },
+        { name:'LivoHerb Cattle', cat:'Hepatoprotective',     desc:'Protects and rejuvenates liver function in cattle with Kutki, Chicory & Globe Artichoke.' },
+        { name:'RepFort',          cat:'Reproductive Health',  desc:'Improves conception rate, estrus cycle regularity, and reduces repeat breeding in dairy cows.' },
+        { name:'RuminoPro',        cat:'Rumen Optimizer',      desc:'Stabilizes rumen pH, reduces bloat, and improves fibre digestibility in ruminants naturally.' },
+        { name:'ImmunoBoost Vet',  cat:'Immunity Booster',     desc:'Herbal immunity supplement for strengthening natural defense mechanisms in calves and adult cattle.' },
+        { name:'CalciHerb',        cat:'Mineral Supplement',   desc:'Prevents milk fever and hypocalcaemia with bioavailable calcium from natural herb sources.' },
+      ].map(p => (
+        <div class="product-card reveal">
+          <div style="font-size:0.75rem; color:var(--color-secondary); font-weight:700; letter-spacing:0.08em; text-transform:uppercase; margin-bottom:0.4rem;">{p.cat}</div>
+          <h4 style="font-family:var(--font-heading); color:var(--color-primary); font-size:1.05rem; margin-bottom:0.6rem;">{p.name}</h4>
+          <p style="color:#64748b; font-size:0.875rem; line-height:1.65;">{p.desc}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- POULTRY & SWINE -->
+<section style="padding:4rem 0; background:white;">
+  <div class="container-max">
+    <div style="display:flex; align-items:center; gap:1rem; margin-bottom:2rem;">
+      <div style="width:56px; height:56px; background:linear-gradient(135deg,#d97706,#fbbf24); border-radius:14px; display:flex; align-items:center; justify-content:center; font-size:1.75rem;">🐔</div>
+      <div>
+        <h2 style="font-family:var(--font-heading); color:var(--color-primary); font-size:1.85rem;">Poultry & Swine</h2>
+        <p style="color:var(--color-secondary); font-size:0.9rem;">Growth promotion | FCR improvement | Immune stimulation</p>
+      </div>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:1.5rem;">
+      {[
+        { name:'GrowMax Poultry',   cat:'Growth Promoter',      desc:'Natural phytogenic growth promoter — increases body weight gain and reduces FCR without antibiotics.' },
+        { name:'HeptoLiv Poultry', cat:'Liver Care',            desc:'Prevents fatty liver syndrome and supports optimal liver function during peak production phase.' },
+        { name:'ImmuHerb Aves',    cat:'Immunostimulant',       desc:'Boosts mucosal and humoral immunity in broilers and layers, reducing mortality and disease incidence.' },
+        { name:'GutFlora Pro',     cat:'Gut Health',            desc:'Prebiotic-rich herbal blend maintaining a healthy gut microbiome for optimal nutrient absorption.' },
+        { name:'SwineBoost',       cat:'Swine Nutrition',       desc:'Comprehensive herbal feed additive for pigs — improves growth rate, feed efficiency, and litter size.' },
+        { name:'AntiBloat Aves',   cat:'Digestive Health',      desc:'Controls necrotic enteritis, reduces mortality, and improves digestive function in poultry flocks.' },
+      ].map(p => (
+        <div class="product-card reveal">
+          <div style="font-size:0.75rem; color:var(--color-accent); font-weight:700; letter-spacing:0.08em; text-transform:uppercase; margin-bottom:0.4rem;">{p.cat}</div>
+          <h4 style="font-family:var(--font-heading); color:var(--color-primary); font-size:1.05rem; margin-bottom:0.6rem;">{p.name}</h4>
+          <p style="color:#64748b; font-size:0.875rem; line-height:1.65;">{p.desc}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- AQUACULTURE -->
+<section style="padding:4rem 0; background:linear-gradient(135deg,#f0fdfa,#e0fdf4);">
+  <div class="container-max">
+    <div style="display:flex; align-items:center; gap:1rem; margin-bottom:2rem;">
+      <div style="width:56px; height:56px; background:linear-gradient(135deg,var(--color-secondary),#0f766e); border-radius:14px; display:flex; align-items:center; justify-content:center; font-size:1.75rem;">🐟</div>
+      <div>
+        <h2 style="font-family:var(--font-heading); color:var(--color-primary); font-size:1.85rem;">Aquaculture</h2>
+        <p style="color:var(--color-secondary); font-size:0.9rem;">Fish health | Water quality | Safe & antibiotic-free</p>
+      </div>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:1.5rem;">
+      {[
+        { name:'AquaGrow Herbal', cat:'Growth Promoter',  desc:'Safe herbal growth promoter for fish and shrimp to improve weight gain and FCR — zero withdrawal period.' },
+        { name:'AquaHep',         cat:'Liver Protectant', desc:'Hepatoprotective herbal mix for fish liver health in intensive pond culture systems.' },
+        { name:'AquaImmune',      cat:'Immunity',         desc:'Strengthens non-specific immunity of fish against bacterial and fungal infections naturally.' },
+      ].map(p => (
+        <div class="product-card reveal" style="border-left-color:var(--color-secondary);">
+          <div style="font-size:0.75rem; color:var(--color-secondary); font-weight:700; letter-spacing:0.08em; text-transform:uppercase; margin-bottom:0.4rem;">{p.cat}</div>
+          <h4 style="font-family:var(--font-heading); color:var(--color-primary); font-size:1.05rem; margin-bottom:0.6rem;">{p.name}</h4>
+          <p style="color:#64748b; font-size:0.875rem; line-height:1.65;">{p.desc}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- PETFIRST -->
+<section style="padding:4rem 0; background:white;">
+  <div class="container-max">
+    <div style="background:linear-gradient(135deg,#1e1b4b,#312e81); border-radius:24px; padding:3.5rem; overflow:hidden; position:relative;">
+      <div style="position:absolute; top:-30px; right:-30px; width:200px; height:200px; background:rgba(255,255,255,0.05); border-radius:50%;"></div>
+      <div style="position:absolute; bottom:-50px; left:-50px; width:280px; height:280px; background:rgba(255,255,255,0.03); border-radius:50%;"></div>
+      
+      <div class="badge reveal" style="background:rgba(217,119,6,0.8); margin-bottom:1.5rem;">New Division</div>
+      <div style="display:flex; align-items:center; gap:1rem; margin-bottom:1.5rem;">
+        <div style="width:64px; height:64px; background:linear-gradient(135deg,#d97706,#fbbf24); border-radius:18px; display:flex; align-items:center; justify-content:center; font-size:2rem;">🐾</div>
+        <div>
+          <h2 style="font-family:var(--font-heading); color:white; font-size:2rem;">PetFirst</h2>
+          <p style="color:#a5b4fc; font-size:0.9rem;">Companion Animal Division — Specially for Dogs & Cats</p>
+        </div>
+      </div>
+      <p class="reveal" style="color:#c7d2fe; line-height:1.8; max-width:700px; margin-bottom:2rem;">
+        PetFirst is our newest and most exciting division — dedicated entirely to the well-being of your beloved companion animals. Using the same phytogenic expertise that's trusted by veterinarians globally, we've created safe, effective, and chemical-free products for dogs and cats.
+      </p>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:1.25rem;">
+        {[
+          { name:'SkinHeal Pet Spray', icon:'💧', desc:'Herbal spray for skin infections, hot spots, and minor wounds in dogs and cats.' },
+          { name:'PetImmune Plus',     icon:'🛡️', desc:'Immunity booster for pets — builds resistance against seasonal infections naturally.' },
+          { name:'PetJoint Ease',      icon:'🦴', desc:'Joint health supplement for senior dogs — reduces stiffness and supports mobility.' },
+          { name:'PetDent Herbal',     icon:'🦷', desc:'Natural dental care powder to prevent tartar buildup and freshen pet breath.' },
+        ].map(p => (
+          <div class="reveal" style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.12); border-radius:14px; padding:1.5rem; backdrop-filter:blur(10px);">
+            <div style="font-size:1.75rem; margin-bottom:0.75rem;">{p.icon}</div>
+            <h4 style="color:white; font-family:var(--font-heading); font-size:0.95rem; margin-bottom:0.5rem;">{p.name}</h4>
+            <p style="color:#a5b4fc; font-size:0.82rem; line-height:1.6;">{p.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+</Layout>

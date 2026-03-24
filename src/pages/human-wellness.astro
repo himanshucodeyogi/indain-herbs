@@ -1,0 +1,181 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Human Wellness | Envin Bioceuticals | Indian Herbs" description="Envin Bioceuticals — Ayurvedic formulations for immunity, heart health, bone strength, respiratory care, and kidney wellness.">
+
+<!-- HERO -->
+<div class="page-hero">
+  <span class="badge" style="margin-bottom:1rem; display:inline-block;">Envin Bioceuticals</span>
+  <h1>Human Wellness</h1>
+  <p>Ancient Ayurveda, clinically validated — herbal formulations crafted for the modern human. Zero chemicals, zero side-effects.</p>
+</div>
+
+<!-- OVERVIEW -->
+<section style="padding:5rem 0; background:white;">
+  <div class="container-max">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center;" class="responsive-grid">
+      <div class="reveal">
+        <div class="badge" style="margin-bottom:1.25rem;">Our Approach</div>
+        <h2 class="section-title" style="text-align:left;">Envin Bioceuticals</h2>
+        <div class="divider" style="margin-left:0;"></div>
+        <p style="color:#64748b; line-height:1.8; margin-bottom:1.25rem;">
+          <strong>Envin Bioceuticals</strong> is the human wellness division of Indian Herbs Specialities, dedicated to bringing the time-tested power of Ayurveda to modern healthcare. Every product is formulated using standardized herbal extracts — validated through rigorous scientific research.
+        </p>
+        <p style="color:#64748b; line-height:1.8; margin-bottom:2rem;">
+          Our commitment: <em>No synthetic chemicals. No harmful side effects. Only nature's finest healing compounds, delivered with pharmaceutical-grade precision.</em>
+        </p>
+        <div style="display:flex; flex-wrap:wrap; gap:1rem;">
+          {['Chemical-Free', 'Clinically Validated', 'Ayurvedic Roots', 'WHO-GMP Compliant'].map(tag => (
+            <span style="background:#f0fdfa; border:1px solid #5eead4; color:var(--color-secondary); font-size:0.8rem; padding:0.35rem 1rem; border-radius:50px; font-weight:500;">{tag}</span>
+          ))}
+        </div>
+      </div>
+      <div class="reveal delay-200" style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+        {[
+          { icon:'🚫', title:'No Side Effects',   desc:'Pure herbal formulations safe for long-term use' },
+          { icon:'🌿', title:'100% Natural',       desc:'Sourced from authenticated medicinal plants only' },
+          { icon:'🔬', title:'Lab Tested',         desc:'Every batch tested for purity and potency' },
+          { icon:'✅', title:'FSSAI Approved',     desc:'Compliant with all Indian food safety standards' },
+        ].map(item => (
+          <div style="background:linear-gradient(135deg,#f0fdfa,#ccfbf1); border-radius:14px; padding:1.5rem; border:1px solid #5eead4;">
+            <div style="font-size:2rem; margin-bottom:0.75rem;">{item.icon}</div>
+            <h4 style="font-family:var(--font-heading); color:var(--color-secondary); font-size:0.95rem; margin-bottom:0.4rem;">{item.title}</h4>
+            <p style="color:#64748b; font-size:0.8rem; line-height:1.6;">{item.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCT CATEGORIES -->
+<section style="padding:5rem 0; background:var(--color-bg);">
+  <div class="container-max">
+    <div style="text-align:center; margin-bottom:0.75rem;">
+      <div class="badge reveal">Product Categories</div>
+    </div>
+    <h2 class="section-title text-center reveal" style="margin-top:1rem;">Our Wellness Range</h2>
+    <div class="divider reveal"></div>
+    <p class="section-subtitle text-center reveal">Targeted herbal solutions for the major health concerns of modern life.</p>
+
+    <div style="display:flex; flex-direction:column; gap:2.5rem; margin-top:2rem;">
+
+      <!-- Immunity -->
+      <div class="card reveal" style="padding:0; overflow:hidden;">
+        <div style="display:grid; grid-template-columns:auto 1fr; gap:0;" class="product-row">
+          <div style="background:linear-gradient(135deg,#166534,#15803d); padding:2.5rem; display:flex; flex-direction:column; justify-content:center; align-items:center; min-width:160px;">
+            <div style="font-size:3rem; margin-bottom:0.75rem;">🛡️</div>
+            <div style="color:white; font-family:var(--font-heading); font-size:0.9rem; text-align:center;">Immunity & Vitality</div>
+          </div>
+          <div style="padding:2.25rem; display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:1.5rem; align-items:start;">
+            {[
+              { name:'ImmunoShield',  desc:'Comprehensive immunity booster with Amla, Tulsi, Giloy & Ashwagandha. Strengthens adaptive and innate immunity.' },
+              { name:'VitaHerb Plus', desc:'Multi-herbal vitality supplement for daily energy, stamina, and overall health optimization.' },
+              { name:'AdaptoMax',     desc:'Stress-adaptation formula with potent adaptogens — Ashwagandha, Shankhpushpi & Brahmi.' },
+            ].map(p => (
+              <div>
+                <h4 style="font-family:var(--font-heading); color:var(--color-primary); font-size:1rem; margin-bottom:0.5rem;">{p.name}</h4>
+                <p style="color:#64748b; font-size:0.85rem; line-height:1.65;">{p.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <!-- Heart & Cholesterol -->
+      <div class="card reveal" style="padding:0; overflow:hidden;">
+        <div style="display:grid; grid-template-columns:auto 1fr; gap:0;" class="product-row">
+          <div style="background:linear-gradient(135deg,#dc2626,#ef4444); padding:2.5rem; display:flex; flex-direction:column; justify-content:center; align-items:center; min-width:160px;">
+            <div style="font-size:3rem; margin-bottom:0.75rem;">❤️</div>
+            <div style="color:white; font-family:var(--font-heading); font-size:0.9rem; text-align:center;">Heart Health</div>
+          </div>
+          <div style="padding:2.25rem; display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:1.5rem; align-items:start;">
+            {[
+              { name:'CardiPro',       desc:'Flagship cardiac health product — manages cholesterol levels, reduces arterial inflammation and supports heart rhythm using Arjuna, Guggul & Garlic extracts.' },
+              { name:'CholestHerb',    desc:'Controls LDL cholesterol and triglycerides naturally with Garlic, Fenugreek & Cinnamon extracts.' },
+              { name:'BP EazeHerbal',  desc:'Manages mild-to-moderate hypertension with Sarpagandha, Brahmi & Garlic in a clinically validated formula.' },
+            ].map(p => (
+              <div>
+                <h4 style="font-family:var(--font-heading); color:var(--color-primary); font-size:1rem; margin-bottom:0.5rem;">{p.name}</h4>
+                <p style="color:#64748b; font-size:0.85rem; line-height:1.65;">{p.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <!-- Bone & Joint -->
+      <div class="card reveal" style="padding:0; overflow:hidden;">
+        <div style="display:grid; grid-template-columns:auto 1fr; gap:0;" class="product-row">
+          <div style="background:linear-gradient(135deg,#0d9488,#0f766e); padding:2.5rem; display:flex; flex-direction:column; justify-content:center; align-items:center; min-width:160px;">
+            <div style="font-size:3rem; margin-bottom:0.75rem;">🦴</div>
+            <div style="color:white; font-family:var(--font-heading); font-size:0.9rem; text-align:center;">Bone & Joint</div>
+          </div>
+          <div style="padding:2.25rem; display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:1.5rem; align-items:start;">
+            {[
+              { name:'JointFlex Pro', desc:'Relieves joint pain and inflammation with Shallaki, Guggul & Nirgundi — safe alternative to NSAIDs.' },
+              { name:'OsteoHerb',     desc:'Supports bone density and prevents osteoporosis with Hadjod, Calcium-rich herbs & Vitamin D3.' },
+            ].map(p => (
+              <div>
+                <h4 style="font-family:var(--font-heading); color:var(--color-primary); font-size:1rem; margin-bottom:0.5rem;">{p.name}</h4>
+                <p style="color:#64748b; font-size:0.85rem; line-height:1.65;">{p.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <!-- Respiratory -->
+      <div class="card reveal" style="padding:0; overflow:hidden;">
+        <div style="display:grid; grid-template-columns:auto 1fr; gap:0;" class="product-row">
+          <div style="background:linear-gradient(135deg,#0369a1,#0284c7); padding:2.5rem; display:flex; flex-direction:column; justify-content:center; align-items:center; min-width:160px;">
+            <div style="font-size:3rem; margin-bottom:0.75rem;">🌬️</div>
+            <div style="color:white; font-family:var(--font-heading); font-size:0.9rem; text-align:center;">Respiratory Care</div>
+          </div>
+          <div style="padding:2.25rem; display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:1.5rem; align-items:start;">
+            {[
+              { name:'PulmoFlex',     desc:'Flagship respiratory product — manages chronic asthma, bronchitis & COPD symptoms with Vasa, Kantkari & Pippali.' },
+              { name:'BroncoHerb',    desc:'Fast-acting herbal bronchodilator and expectorant for seasonal cough and respiratory congestion.' },
+            ].map(p => (
+              <div>
+                <h4 style="font-family:var(--font-heading); color:var(--color-primary); font-size:1rem; margin-bottom:0.5rem;">{p.name}</h4>
+                <p style="color:#64748b; font-size:0.85rem; line-height:1.65;">{p.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <!-- Kidney -->
+      <div class="card reveal" style="padding:0; overflow:hidden;">
+        <div style="display:grid; grid-template-columns:auto 1fr; gap:0;" class="product-row">
+          <div style="background:linear-gradient(135deg,#7c3aed,#6d28d9); padding:2.5rem; display:flex; flex-direction:column; justify-content:center; align-items:center; min-width:160px;">
+            <div style="font-size:3rem; margin-bottom:0.75rem;">🫘</div>
+            <div style="color:white; font-family:var(--font-heading); font-size:0.9rem; text-align:center;">Kidney Support</div>
+          </div>
+          <div style="padding:2.25rem; display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:1.5rem; align-items:start;">
+            {[
+              { name:'NefroLiv',      desc:'Flagship kidney health product — protects renal tubules, reduces creatinine levels, and manages CKD progression with Punarnava, Gokshura & Varuna.' },
+              { name:'UriHerb Clear', desc:'Natural UTI relief and urinary tract health support using Tribulus, Coriander & Gokshura.' },
+            ].map(p => (
+              <div>
+                <h4 style="font-family:var(--font-heading); color:var(--color-primary); font-size:1rem; margin-bottom:0.5rem;">{p.name}</h4>
+                <p style="color:#64748b; font-size:0.85rem; line-height:1.65;">{p.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  @media (max-width: 640px) {
+    .product-row { grid-template-columns: 1fr !important; }
+    .responsive-grid { grid-template-columns: 1fr !important; }
+  }
+</style>
+</Layout>

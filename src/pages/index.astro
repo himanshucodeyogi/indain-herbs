@@ -1,0 +1,262 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Indian Herbs Specialities | 70+ Years of Herbal Excellence">
+
+<!-- ===========================
+     HERO SECTION (Three.js BG)
+=========================== -->
+<section style="min-height:100vh; position:relative; display:flex; align-items:center; overflow:hidden; background:linear-gradient(135deg, #0f2419 0%, #166534 50%, #0d3320 100%);">
+  <canvas id="hero-canvas"></canvas>
+
+  <!-- Overlay gradient -->
+  <div style="position:absolute; inset:0; background:radial-gradient(ellipse at 60% 50%, rgba(13,148,136,0.15) 0%, transparent 60%), radial-gradient(ellipse at 20% 80%, rgba(217,119,6,0.08) 0%, transparent 50%); z-index:1; pointer-events:none;"></div>
+
+  <div class="container-max" style="position:relative; z-index:2; padding-top: 6rem; padding-bottom: 4rem;">
+    <div style="max-width: 720px;">
+      <div class="badge animate-fade-up" style="margin-bottom:1.5rem;">Since 1951 — Trusted Globally</div>
+      <h1 style="font-family:var(--font-heading); font-size:clamp(2.2rem,5.5vw,4rem); color:white; line-height:1.2; margin-bottom:1.5rem;" class="animate-fade-up delay-100">
+        70+ Years of Herbal Excellence<br/>
+        <span class="gradient-text">Where Ayurveda Meets</span><br/>
+        Modern Science
+      </h1>
+      <p style="font-size:1.15rem; color:#d1fae5; margin-bottom:2.5rem; max-width:560px; opacity:0.9;" class="animate-fade-up delay-200">
+        India's premier herbal company — bridging ancient Ayurvedic wisdom with cutting-edge phytogenics research for healthier animals and humans worldwide.
+      </p>
+      <div style="display:flex; flex-wrap:wrap; gap:1rem;" class="animate-fade-up delay-300">
+        <a href="/about" class="btn-primary pulse-glow">
+          <span>Discover Our Legacy</span> →
+        </a>
+        <a href="/animal-healthcare" class="btn-secondary">
+          Explore Products
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div style="position:absolute; bottom:2rem; left:50%; transform:translateX(-50%); z-index:2; display:flex; flex-direction:column; align-items:center; gap:0.5rem;">
+    <span style="color:#86efac; font-size:0.75rem; letter-spacing:0.1em; text-transform:uppercase;">Scroll Down</span>
+    <div style="width:2px; height:40px; background:linear-gradient(to bottom, #86efac, transparent); animation:float 2s ease-in-out infinite;"></div>
+  </div>
+</section>
+
+<!-- ===========================
+     STATS SECTION
+=========================== -->
+<section style="padding:5rem 0; background:white;" class="section-bg-white">
+  <div class="container-max">
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(180px, 1fr)); gap:2rem;">
+      {[
+        { num: 70, suffix: '+', label: 'Years of Excellence', icon: '🏛️' },
+        { num: 230, suffix: '+', label: 'Product Portfolio', icon: '🌿' },
+        { num: 50, suffix: '+', label: 'Countries Served', icon: '🌍' },
+        { num: 22, suffix: '+', label: 'Patents Granted', icon: '📋' },
+        { num: 1250, suffix: '+', label: 'Research Papers', icon: '🔬' },
+      ].map(stat => (
+        <div class="reveal" style="text-align:center; padding:2rem 1rem;">
+          <div style="font-size:2.5rem; margin-bottom:0.75rem;">{stat.icon}</div>
+          <span class="stat-number counter" data-target={stat.num} data-suffix={stat.suffix}>0{stat.suffix}</span>
+          <p style="color:#64748b; font-size:0.875rem; margin-top:0.5rem; font-weight:500;">{stat.label}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- ===========================
+     EXPERTISE GRID
+=========================== -->
+<section style="padding:5rem 0; background:var(--color-bg);">
+  <div class="container-max">
+    <div style="text-align:center; margin-bottom:1rem;">
+      <div class="badge reveal">Our Expertise</div>
+    </div>
+    <h2 class="section-title text-center reveal" style="margin-top:1rem;">Two Pillars of Excellence</h2>
+    <div class="divider reveal"></div>
+    <p class="section-subtitle text-center reveal">From the barn to the home — comprehensive herbal solutions for every living being.</p>
+
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(340px,1fr)); gap:2rem; max-width:900px; margin:0 auto;">
+      
+      <!-- Animal Healthcare -->
+      <a href="/animal-healthcare" style="text-decoration:none;" class="reveal">
+        <div class="card" style="padding:3rem 2.5rem; background:linear-gradient(135deg, #f0fdf4, #dcfce7); border:2px solid #86efac;">
+          <div style="width:72px; height:72px; background:linear-gradient(135deg,var(--color-primary),var(--color-primary-light)); border-radius:20px; display:flex; align-items:center; justify-content:center; font-size:2rem; margin-bottom:1.75rem; box-shadow:0 8px 25px rgba(22,101,52,0.25);">🐄</div>
+          <h3 style="font-family:var(--font-heading); font-size:1.5rem; color:var(--color-primary); margin-bottom:1rem;">Animal Healthcare</h3>
+          <p style="color:#475569; line-height:1.7; margin-bottom:1.5rem;">Phytogenic feed additives, growth promoters, and immunity boosters for cattle, poultry, swine, aquaculture, and companion animals.</p>
+          <div style="display:flex; flex-wrap:wrap; gap:0.5rem;">
+            {['Cattle', 'Poultry', 'Aquaculture', 'PetFirst'].map(tag => (
+              <span style="background:#166534; color:white; font-size:0.75rem; padding:0.25rem 0.75rem; border-radius:50px;">{tag}</span>
+            ))}
+          </div>
+          <div style="margin-top:1.75rem; color:var(--color-primary); font-weight:600; font-size:0.9rem;">Explore Products →</div>
+        </div>
+      </a>
+
+      <!-- Human Wellness -->
+      <a href="/human-wellness" style="text-decoration:none;" class="reveal delay-200">
+        <div class="card" style="padding:3rem 2.5rem; background:linear-gradient(135deg, #f0fdfa, #ccfbf1); border:2px solid #5eead4;">
+          <div style="width:72px; height:72px; background:linear-gradient(135deg,var(--color-secondary),#0f766e); border-radius:20px; display:flex; align-items:center; justify-content:center; font-size:2rem; margin-bottom:1.75rem; box-shadow:0 8px 25px rgba(13,148,136,0.25);">💚</div>
+          <h3 style="font-family:var(--font-heading); font-size:1.5rem; color:var(--color-secondary); margin-bottom:1rem;">Human Wellness</h3>
+          <p style="color:#475569; line-height:1.7; margin-bottom:1.5rem;">Envin Bioceuticals — Ayurvedic formulations for immunity, bone health, heart wellness, respiratory care & kidney support. Zero side-effects.</p>
+          <div style="display:flex; flex-wrap:wrap; gap:0.5rem;">
+            {['CardiPro', 'PulmoFlex', 'NefroLiv', 'Immunity'].map(tag => (
+              <span style="background:#0d9488; color:white; font-size:0.75rem; padding:0.25rem 0.75rem; border-radius:50px;">{tag}</span>
+            ))}
+          </div>
+          <div style="margin-top:1.75rem; color:var(--color-secondary); font-weight:600; font-size:0.9rem;">Explore Wellness →</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================
+     WHY CHOOSE US
+=========================== -->
+<section style="padding:5rem 0;" class="section-bg-green">
+  <div class="container-max">
+    <div style="text-align:center; margin-bottom:1rem;">
+      <div class="badge reveal" style="background:rgba(255,255,255,0.2); color:white;">Why Choose Us</div>
+    </div>
+    <h2 class="section-title text-center reveal" style="margin-top:1rem; color:#86efac;">The Indian Herbs Difference</h2>
+    <div class="divider reveal"></div>
+
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px,1fr)); gap:1.75rem; margin-top:2rem;">
+      {[
+        { icon:'🌿', title:'100% Natural',       desc:'Pure herbal extracts with no synthetic additives or harmful chemicals.',              delay: '' },
+        { icon:'🔬', title:'Clinically Proven',   desc:'Backed by 1250+ research papers and 200+ completed Ph.D. & M.V.Sc. studies.',       delay: 'delay-100' },
+        { icon:'🏆', title:'Export Quality',      desc:'WHO-GMP, ISO 9001:2015, FAMI-QS certified and exported to 7 continents.',           delay: 'delay-200' },
+        { icon:'💡', title:'22+ Patents',         desc:'Pioneering innovations in nutrigenomics, transcriptomics & phytogenics.',           delay: 'delay-300' },
+        { icon:'🌍', title:'Global Trust',        desc:'Present in 50+ countries across all 7 continents for over 7 decades.',              delay: 'delay-400' },
+        { icon:'🧪', title:'Advanced R&D',        desc:'State-of-the-art labs: HPLC, GC-MS, Phytochemistry & Pharmacology.',              delay: '' },
+      ].map(item => (
+        <div class={`card reveal ${item.delay}`} style="padding:2rem; background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.15); backdrop-filter:blur(10px);">
+          <div style="font-size:2.2rem; margin-bottom:1rem;">{item.icon}</div>
+          <h4 style="font-family:var(--font-heading); color:white; font-size:1.1rem; margin-bottom:0.6rem;">{item.title}</h4>
+          <p style="color:#d1fae5; font-size:0.875rem; line-height:1.7; opacity:0.85;">{item.desc}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- ===========================
+     CTA BANNER
+=========================== -->
+<section style="padding:5rem 0; background:white;">
+  <div class="container-max" style="text-align:center;">
+    <div class="reveal" style="background:linear-gradient(135deg,#fef3c7,#fef9ee); border:2px solid #fde68a; border-radius:24px; padding:4rem 2rem; max-width:720px; margin:0 auto;">
+      <div style="font-size:3rem; margin-bottom:1rem;">🌟</div>
+      <h2 style="font-family:var(--font-heading); font-size:clamp(1.75rem,4vw,2.5rem); color:var(--color-primary); margin-bottom:1rem;">
+        Ready to Partner with India's Herbal Leaders?
+      </h2>
+      <p style="color:#64748b; font-size:1.05rem; margin-bottom:2rem; max-width:500px; margin-left:auto; margin-right:auto;">
+        Whether you need bulk orders, export inquiry, or product samples — we're here to help.
+      </p>
+      <div style="display:flex; flex-wrap:wrap; gap:1rem; justify-content:center;">
+        <a href="/contact" class="btn-primary">Request Sample →</a>
+        <a href="/research" style="display:inline-flex; align-items:center; gap:0.5rem; color:var(--color-primary); font-weight:600; text-decoration:none; font-size:0.95rem; padding:0.75rem 1.5rem; border:2px solid var(--color-primary); border-radius:50px; transition:all 0.3s;">
+          View Research →
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</Layout>
+
+<!-- THREE.JS HERO ANIMATION -->
+<script>
+  import * as THREE from 'three';
+
+  const canvas = document.getElementById('hero-canvas') as HTMLCanvasElement;
+  const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  renderer.setSize(window.innerWidth, window.innerHeight);
+
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
+  camera.position.z = 30;
+
+  // Particle system - floating herb/DNA particles
+  const particleCount = 1800;
+  const positions = new Float32Array(particleCount * 3);
+  const colors    = new Float32Array(particleCount * 3);
+  const sizes     = new Float32Array(particleCount);
+
+  const colorPalette = [
+    new THREE.Color('#16a34a'),
+    new THREE.Color('#0d9488'),
+    new THREE.Color('#d97706'),
+    new THREE.Color('#86efac'),
+    new THREE.Color('#5eead4'),
+  ];
+
+  for (let i = 0; i < particleCount; i++) {
+    const angle = (i / particleCount) * Math.PI * 20;
+    const radius = 0.4 + (i / particleCount) * 28;
+    const helix = i % 2 === 0 ? 1 : -1;
+
+    positions[i * 3]     = Math.cos(angle) * radius * 0.6 + (Math.random() - 0.5) * 15;
+    positions[i * 3 + 1] = Math.sin(angle) * radius * 0.6 * helix + (Math.random() - 0.5) * 20;
+    positions[i * 3 + 2] = (Math.random() - 0.5) * 30;
+
+    const c = colorPalette[Math.floor(Math.random() * colorPalette.length)];
+    colors[i * 3]     = c.r;
+    colors[i * 3 + 1] = c.g;
+    colors[i * 3 + 2] = c.b;
+
+    sizes[i] = Math.random() * 3 + 0.5;
+  }
+
+  const geo = new THREE.BufferGeometry();
+  geo.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+  geo.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+  geo.setAttribute('size', new THREE.BufferAttribute(sizes, 1));
+
+  const mat = new THREE.PointsMaterial({
+    size: 0.18,
+    vertexColors: true,
+    transparent: true,
+    opacity: 0.75,
+    sizeAttenuation: true,
+  });
+
+  const particles = new THREE.Points(geo, mat);
+  scene.add(particles);
+
+  // Mouse parallax
+  let mouseX = 0, mouseY = 0;
+  window.addEventListener('mousemove', e => {
+    mouseX = (e.clientX / window.innerWidth - 0.5) * 2;
+    mouseY = (e.clientY / window.innerHeight - 0.5) * 2;
+  });
+
+  // Resize
+  window.addEventListener('resize', () => {
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+  });
+
+  // Animation loop
+  let time = 0;
+  function animate() {
+    requestAnimationFrame(animate);
+    time += 0.003;
+
+    particles.rotation.y = time * 0.12 + mouseX * 0.05;
+    particles.rotation.x = time * 0.08 + mouseY * 0.03;
+    particles.rotation.z = time * 0.05;
+
+    camera.position.x += (mouseX * 3 - camera.position.x) * 0.02;
+    camera.position.y += (-mouseY * 2 - camera.position.y) * 0.02;
+    camera.lookAt(scene.position);
+
+    renderer.render(scene, camera);
+  }
+
+  animate();
+</script>

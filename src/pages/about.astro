@@ -1,0 +1,155 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="About Us | Indian Herbs Specialities Pvt. Ltd." description="Learn about the legacy of Indian Herbs since 1951 — our journey, global reach, and board of directors.">
+
+<!-- HERO -->
+<div class="page-hero">
+  <span class="badge" style="margin-bottom:1rem; display:inline-block;">Est. 1951</span>
+  <h1>Our Legacy & Vision</h1>
+  <p>From a small herbal workshop to a global empire — the story of 70+ years of dedication to natural health.</p>
+</div>
+
+<!-- JOURNEY TIMELINE -->
+<section style="padding:5rem 0; background:white; overflow:hidden;">
+  <div class="container-max">
+    <div style="text-align:center; margin-bottom:0.75rem;">
+      <div class="badge reveal">The Journey</div>
+    </div>
+    <h2 class="section-title text-center reveal" style="margin-top:1rem;">From 1951 to Today</h2>
+    <div class="divider reveal"></div>
+    <p class="section-subtitle text-center reveal">
+      Founded by the visionary Late Shri Ram Lal Agrawal ji with a simple but profound belief — <em>"Nature's Way to Animal Health"</em>
+    </p>
+
+    <div style="position:relative; max-width:800px; margin:0 auto;">
+      <!-- Timeline line (desktop) -->
+      <div style="position:absolute; left:50%; top:0; bottom:0; width:2px; background:linear-gradient(to bottom, var(--color-primary),var(--color-secondary)); transform:translateX(-50%); display:block;" class="timeline-center-line"></div>
+
+      {[
+        { year:'1951', side:'left',  icon:'🌱', title:'The Beginning',    desc:'Late Shri Ram Lal Agrawal ji founded the company in Saharanpur with a vision to bring Nature\'s healing power to animals.' },
+        { year:'1960s',side:'right', icon:'🔬', title:'First Research Lab', desc:'Established the first dedicated phytochemistry lab — marking the beginning of science-backed herbal product development.' },
+        { year:'1980s',side:'left',  icon:'🌍', title:'Going Global',       desc:'Began exporting to international markets, making Indian herbal products trusted across multiple continents.' },
+        { year:'2000s',side:'right', icon:'🏆', title:'Patent Milestones',  desc:'Received first batch of patents for novel herbal formulations in animal nutrition — 22+ patents granted till date.' },
+        { year:'2010s',side:'left',  icon:'💊', title:'Envin Bioceuticals', desc:'Launched the human wellness division, extending Ayurvedic expertise to human health with clinically validated products.' },
+        { year:'2020s',side:'right', icon:'🐾', title:'PetFirst Division',  desc:'Launched PetFirst — a dedicated division for companion animals (dogs & cats) with safe, herbal-based pet care products.' },
+        { year:'Today',side:'left',  icon:'🚀', title:'50+ Countries',      desc:'Present across 50+ countries on 7 continents, with 230+ products, 1250+ research papers, and a team of 200+ scientists.' },
+      ].map((item, idx) => (
+        <div class={`reveal ${item.side === 'right' ? 'delay-200' : ''}`}
+          style={`display:flex; justify-content:${item.side === 'left' ? 'flex-start' : 'flex-end'}; margin-bottom:2.5rem; position:relative;`}>
+          <div style="width:44%; background:white; border-radius:16px; padding:1.75rem; box-shadow:0 4px 20px rgba(0,0,0,0.08); border:1px solid #e2e8f0; position:relative;">
+            <!-- Dot -->
+            <div style={`position:absolute; top:1.5rem; ${item.side === 'left' ? 'right:-5.5%' : 'left:-5.5%'}; width:14px; height:14px; background:var(--color-accent); border-radius:50%; border:3px solid white; box-shadow:0 0 0 3px var(--color-accent);`}></div>
+            <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.75rem;">
+              <span style="font-size:1.75rem;">{item.icon}</span>
+              <div>
+                <div style="font-size:0.75rem; color:var(--color-accent); font-weight:700; letter-spacing:0.05em;">{item.year}</div>
+                <h4 style="font-family:var(--font-heading); font-size:1rem; color:var(--color-primary);">{item.title}</h4>
+              </div>
+            </div>
+            <p style="color:#64748b; font-size:0.875rem; line-height:1.7;">{item.desc}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- GLOBAL REACH -->
+<section style="padding:5rem 0;" class="section-bg-green">
+  <div class="container-max" style="text-align:center;">
+    <div class="badge reveal" style="background:rgba(255,255,255,0.2); color:white; margin-bottom:1rem;">Global Presence</div>
+    <h2 class="section-title text-center reveal" style="margin-top:0.5rem;">Trusted on Every Continent</h2>
+    <div class="divider reveal"></div>
+    <p class="section-subtitle reveal">Indian Herbs products are exported to 50+ countries across all 7 continents — from North America to Australia, Europe to Southeast Asia.</p>
+
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(160px,1fr)); gap:1.5rem; max-width:900px; margin:0 auto;">
+      {[
+        { continent:'Asia',          count:'20+', flag:'🌏' },
+        { continent:'Europe',        count:'12+', flag:'🌍' },
+        { continent:'North America', count:'5+',  flag:'🌎' },
+        { continent:'Africa',        count:'8+',  flag:'🌍' },
+        { continent:'South America', count:'3+',  flag:'🌎' },
+        { continent:'Australia',     count:'2+',  flag:'🌏' },
+        { continent:'Middle East',   count:'5+',  flag:'🌍' },
+      ].map(item => (
+        <div class="reveal" style="background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.2); border-radius:14px; padding:1.5rem 1rem; backdrop-filter:blur(10px);">
+          <div style="font-size:2.5rem; margin-bottom:0.5rem;">{item.flag}</div>
+          <div style="font-size:1.75rem; font-weight:700; color:#fbbf24;">{item.count}</div>
+          <div style="font-size:0.8rem; color:#d1fae5; margin-top:0.25rem;">{item.continent}</div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- BOARD OF DIRECTORS -->
+<section style="padding:5rem 0; background:var(--color-bg);">
+  <div class="container-max">
+    <div style="text-align:center; margin-bottom:0.75rem;">
+      <div class="badge reveal">Leadership</div>
+    </div>
+    <h2 class="section-title text-center reveal" style="margin-top:1rem;">Board of Directors</h2>
+    <div class="divider reveal"></div>
+    <p class="section-subtitle text-center reveal">Visionary leaders combining decades of industry expertise with a passion for herbal science.</p>
+
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:2rem;">
+      {[
+        {
+          name: 'Dr. Sushiel Agrawal',
+          title: 'Chairman & CEO',
+          desc: 'Winner of the prestigious J.S. Juneja Award. Steers the company\'s global vision with over 35 years of expertise in herbal animal healthcare and R&D leadership.',
+          icon: '👨‍⚕️',
+          highlight: true,
+          awards: 'J.S. Juneja Award Winner',
+        },
+        {
+          name: 'Shri Sudhakar Agarwal',
+          title: 'Director',
+          desc: 'Accomplished business strategist who has spearheaded the company\'s international expansion efforts across multiple continents.',
+          icon: '👔',
+          highlight: false,
+          awards: '',
+        },
+        {
+          name: 'Shri Gaurav Agrawal',
+          title: 'Director',
+          desc: 'Leads the logistics and operations division, ensuring quality standards are met from production to delivery worldwide.',
+          icon: '📊',
+          highlight: false,
+          awards: '',
+        },
+        {
+          name: 'Shri Vipul Agrawal',
+          title: 'Director',
+          desc: 'Drives the marketing and new product launch strategy, connecting herbal innovations to global markets.',
+          icon: '🚀',
+          highlight: false,
+          awards: '',
+        },
+        {
+          name: 'Dr. Shivi Maini',
+          title: 'Research Director',
+          desc: 'Heads the R&D laboratories with a focus on nutrigenomics and transcriptomics research for next-generation phytogenic products.',
+          icon: '🔬',
+          highlight: false,
+          awards: '',
+        },
+      ].map(person => (
+        <div class={`card reveal ${person.highlight ? 'delay-100' : ''}`} style={`padding:2.25rem; ${person.highlight ? 'border:2px solid var(--color-accent); background:linear-gradient(135deg,#fef9ee,#fff);' : ''}`}>
+          <div style="display:flex; align-items:center; gap:1rem; margin-bottom:1.25rem;">
+            <div style={`width:60px; height:60px; border-radius:16px; display:flex; align-items:center; justify-content:center; font-size:1.75rem; background:${person.highlight ? 'linear-gradient(135deg,#d97706,#fbbf24)' : 'linear-gradient(135deg,var(--color-primary),var(--color-primary-light))'}; flex-shrink:0;`}>{person.icon}</div>
+            <div>
+              <h4 style="font-family:var(--font-heading); color:var(--color-primary); font-size:1rem;">{person.name}</h4>
+              <p style="color:var(--color-secondary); font-size:0.8rem; font-weight:600;">{person.title}</p>
+            </div>
+          </div>
+          {person.awards && <div class="badge" style="margin-bottom:1rem; font-size:0.7rem;">{person.awards}</div>}
+          <p style="color:#64748b; font-size:0.875rem; line-height:1.7;">{person.desc}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+</Layout>
