@@ -137,6 +137,163 @@
   opacity: 0.9;
 }
 
+/* Proud to Deliver Excellence */
+.proud-section {
+  padding: 80px 20px;
+  background: #ffffff;
+}
+
+.proud-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.proud-header {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 60px;
+  margin-bottom: 70px;
+  align-items: start;
+}
+
+.proud-heading {
+  font-size: 48px;
+  font-weight: 700;
+  color: #2c2c2c;
+  margin: 0;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+.proud-description {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+  margin: 0;
+}
+
+.proud-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px 30px;
+}
+
+.proud-stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px 20px;
+  transition: transform 0.3s ease;
+}
+
+.proud-stat-item:hover {
+  transform: translateY(-5px);
+}
+
+.proud-stat-icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2c2c2c;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.proud-stat-item:hover .proud-stat-icon {
+  color: var(--primary-leaf, #4a9b5a);
+  transform: scale(1.1);
+}
+
+.proud-stat-number {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--primary-leaf, #4a9b5a);
+  line-height: 1;
+  letter-spacing: -1px;
+  margin-bottom: 8px;
+}
+
+.proud-stat-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #2c2c2c;
+  line-height: 1.4;
+}
+
+@media (max-width: 1024px) {
+  .proud-header {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+
+  .proud-heading {
+    font-size: 40px;
+  }
+
+  .proud-stats-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .proud-section {
+    padding: 50px 15px;
+  }
+
+  .proud-heading {
+    font-size: 32px;
+  }
+
+  .proud-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 20px;
+  }
+
+  .proud-stat-item {
+    padding: 25px 15px;
+  }
+
+  .proud-stat-icon {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 15px;
+  }
+
+  .proud-stat-number {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .proud-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px 15px;
+  }
+
+  .proud-stat-item {
+    padding: 20px 10px;
+  }
+
+  .proud-stat-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 12px;
+  }
+
+  .proud-stat-number {
+    font-size: 24px;
+  }
+
+  .proud-stat-label {
+    font-size: 12px;
+  }
+}
+
 @media (max-width: 992px) {
   .research-hero h1 {
     font-size: 2.5rem;

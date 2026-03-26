@@ -16,51 +16,32 @@
   opacity: 0.9;
 }
 
-.filter-tags {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-bottom: 4rem;
-  flex-wrap: wrap;
-}
-
-.filter-tag {
-  padding: 0.6rem 1.5rem;
-  border: 1px solid #ddd;
-  border-radius: 50px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.filter-tag:hover, .filter-tag.active {
-  background-color: var(--primary-deep);
-  color: white;
-  border-color: var(--primary-deep);
-}
-
 .articles-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 3rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 5rem;
 }
 
 .article-card {
   background-color: white;
-  border-radius: 20px;
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.07);
   display: flex;
   flex-direction: column;
-  transition: transform 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .article-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.13);
 }
 
 .article-image {
-  height: 250px;
+  height: 220px;
   position: relative;
   overflow: hidden;
 }
@@ -73,105 +54,104 @@
 }
 
 .article-card:hover .article-image img {
-  transform: scale(1.1);
+  transform: scale(1.07);
 }
 
-.article-cat-badge {
+.article-image-overlay {
   position: absolute;
-  top: 1.5rem;
-  left: 1.5rem;
-  z-index: 1;
-  background-color: var(--primary-leaf);
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.article-card:hover .article-image-overlay {
+  opacity: 1;
+}
+
+.article-image-overlay span {
   color: white;
-  padding: 0.5rem 1.2rem;
-  border-radius: 50px;
   font-weight: 700;
-  font-size: 0.75rem;
-  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.03em;
 }
 
 .article-info {
-  padding: 2.5rem;
+  padding: 1.75rem;
   flex: 1;
   display: flex;
   flex-direction: column;
 }
 
-.article-meta {
-  display: flex;
-  gap: 1.5rem;
-  margin-bottom: 1rem;
-  font-size: 0.85rem;
-  color: #888;
-}
-
-.article-meta span {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
 .article-info h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  line-height: 1.4;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+  color: var(--text-dark, #1a1a1a);
 }
 
 .article-info p {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: #666;
-  margin-bottom: 2rem;
   flex: 1;
+  margin-bottom: 1.25rem;
+  line-height: 1.6;
 }
 
-.newsletter-box {
-  background-color: var(--bg-beige);
-  padding: 5rem;
-  border-radius: 30px;
-  max-width: 900px;
-  margin: 0 auto;
+.article-read-more {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primary-leaf, #4a7c3f);
+  font-weight: 600;
+  font-size: 0.9rem;
 }
 
-.newsletter-box h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+/* CTA section */
+.media-cta-section {
+  background-color: var(--bg-beige, #f5f0e8);
+  border-radius: 24px;
+  padding: 4rem;
+  text-align: center;
 }
 
-.newsletter-box p {
-  margin-bottom: 2.5rem;
-  font-size: 1.1rem;
+.media-cta-content h2 {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
 }
 
-.newsletter-form {
+.media-cta-content p {
+  font-size: 1.05rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.media-cta-buttons {
   display: flex;
   gap: 1rem;
-  max-width: 600px;
-  margin: 0 auto;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.newsletter-form input {
-  flex: 1;
-  padding: 1rem 1.5rem;
-  border: 1px solid #ddd;
-  border-radius: 50px;
-  font-size: 1rem;
-  outline: none;
+@media (max-width: 1024px) {
+  .articles-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-.newsletter-form .btn {
-  padding: 1rem 2.5rem;
-}
-
-@media (max-width: 992px) {
+@media (max-width: 640px) {
   .articles-grid {
     grid-template-columns: 1fr;
   }
-  
-  .newsletter-form {
-    flex-direction: column;
+
+  .media-cta-section {
+    padding: 2.5rem 1.5rem;
   }
-  
-  .newsletter-form .btn {
-    width: 100%;
+
+  .media-hero h1 {
+    font-size: 2rem;
   }
 }
