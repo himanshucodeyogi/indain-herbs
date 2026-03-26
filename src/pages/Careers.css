@@ -1,0 +1,144 @@
+.careers-hero {
+  background-color: var(--primary-deep);
+  color: white;
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.careers-hero h1 {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.careers-hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.9;
+}
+
+.culture-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.culture-section p {
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.8;
+}
+
+.perks-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.perk {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.perk svg {
+  color: var(--primary-leaf);
+  flex-shrink: 0;
+}
+
+.perk h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.perk p {
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+.culture-image {
+  background-color: var(--bg-beige);
+  height: 450px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.culture-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.roles-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.role-card {
+  background-color: white;
+  padding: 2.5rem;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+  border-left: 5px solid transparent;
+}
+
+.role-card:hover {
+  transform: translateX(10px);
+  border-left-color: var(--primary-leaf);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.role-main h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.role-meta {
+  display: flex;
+  gap: 2rem;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.role-meta span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.role-action {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.role-type {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--primary-teal);
+  text-transform: uppercase;
+}
+
+.mt-4 {
+  margin-top: 4rem;
+}
+
+@media (max-width: 768px) {
+  .role-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  
+  .role-action {
+    width: 100%;
+    justify-content: space-between;
+  }
+}

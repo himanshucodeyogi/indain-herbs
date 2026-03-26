@@ -1,0 +1,108 @@
+:root {
+  /* Brand Colors - Indian Herbs */
+  --primary-deep: #1F5E3B; /* Deep Herbal Green */
+  --primary-leaf: #5E9F52; /* Leaf Green */
+  --primary-teal: #1E7C7A; /* Clinical Teal */
+  
+  --bg-beige: #F4EBDD; /* Warm Beige */
+  --bg-off-white: #FAFAF7; /* Off White */
+  --bg-soft-grey: #E9ECE8; /* Soft Grey */
+  --text-charcoal: #1F2933; /* Charcoal */
+  --accent-gold: #C89A3D; /* Gold */
+
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 8rem;
+
+  /* Typography */
+  --font-heading: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-off-white);
+  color: var(--text-charcoal);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--primary-deep);
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  transition: all 0.3s ease;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-sm);
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: var(--primary-deep);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-leaf);
+}
+
+.btn-outline {
+  border: 2px solid var(--primary-deep);
+  color: var(--primary-deep);
+}
+
+.btn-outline:hover {
+  background-color: var(--primary-deep);
+  color: white;
+}
+
+.section-padding {
+  padding: var(--space-lg) 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --space-lg: 3rem;
+    --space-xl: 5rem;
+  }
+}

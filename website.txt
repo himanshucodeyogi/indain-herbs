@@ -1,0 +1,1091 @@
+Bilkul — neeche **Indian Herbs New Website** ke liye **full Product Requirements Document (PRD)** diya hua hai.
+Ye **founder/client presentation + UI/UX designer + developer + content writer + SEO team** sabke kaam ka hoga.
+Main is PRD ko **real execution document** ki tarah bana raha hoon — sirf idea list nahi.
+
+Jo structure, positioning, navigation aur page hierarchy main de raha hoon, woh **Indian Herbs ke current public website, About, Research, Careers, Contact aur Product architecture** ko study karke banaya gaya hai. Current site me already **multi-species products, research-backed positioning, certifications, careers, blog/news, and contact flows** visible hain — lekin unhe nayi site me much stronger UX aur conversion system me organize karna chahiye. ([Indian Herbs][1])
+
+---
+
+# PRODUCT REQUIREMENTS DOCUMENT (PRD)
+
+## Project Name:
+
+**Indian Herbs – New Corporate + Product + Research Website**
+
+## Version:
+
+**v1.0**
+
+## Prepared For:
+
+**Indian Herbs Specialities Pvt. Ltd.**
+
+## Project Type:
+
+**Corporate Website + Product Discovery Platform + Lead Generation Website**
+
+---
+
+# 1. EXECUTIVE SUMMARY
+
+Indian Herbs ko ek **modern, high-trust, research-led, export-ready, multi-species phytogenic animal healthcare brand** ke roop me present karne ke liye ek nayi website build karni hai.
+
+Current website me brand ki strength visible hai:
+
+* 1951 legacy
+* herbal animal healthcare positioning
+* research & innovation claims
+* certifications
+* species-based products
+* careers and contact pages
+* product commerce/catalog structure
+  Lekin user journey, brand clarity, product discovery, trust hierarchy, export conversion, and B2B lead capture ko aur strong banana zaroori hai. ([Indian Herbs][1])
+
+### Final Goal:
+
+Ek aisi website build karni jo:
+
+1. **Brand authority build kare**
+2. **Scientific trust establish kare**
+3. **Products ko easily discoverable banaye**
+4. **Domestic + export leads generate kare**
+5. **Distributors, vets, institutions aur end-buyers ke liye relevant ho**
+6. **SEO-friendly aur scalable ho**
+
+---
+
+# 2. BUSINESS OBJECTIVES
+
+## Primary Business Objectives
+
+* Indian Herbs ko **premium scientific herbal brand** ke roop me reposition karna
+* Animal health category me **trust-led digital presence** banana
+* Website ko **lead generation engine** me convert karna
+* Export inquiries aur distributor partnerships ko improve karna
+* Product range ko structured aur conversion-friendly banana
+* R&D aur certifications ko visible trust assets ke roop me use karna
+
+## Secondary Objectives
+
+* Recruitment branding improve karna
+* Research credibility ko front-facing banana
+* Human wellness segment ko controlled way me support karna
+* Future ecommerce / gated download / distributor portal ke liye scalable architecture create karna
+
+---
+
+# 3. PROBLEM STATEMENT
+
+Current public site me content rich hai, but UX aur business flow me issues hain:
+
+## Key Problems
+
+* Brand story fragmented hai
+* Product discovery intuitive nahi hai
+* Buyer types (farmer / vet / distributor / exporter) ke liye dedicated journeys weak hain
+* Leadership visibility low hai
+* Research page valuable hai but premium way me packaged nahi hai
+* Certifications aur compliance ko stronger trust layer banana chahiye
+* Website B2B conversion aur enterprise trust ke hisaab se under-optimized lagti hai
+
+---
+
+# 4. PRODUCT VISION
+
+> **“To build the most credible, research-forward, globally present digital brand experience in the phytogenic animal healthcare space.”**
+
+---
+
+# 5. TARGET USERS / USER PERSONAS
+
+Website ko 4–6 primary user personas ke hisaab se design karna hoga.
+
+## Persona 1 — Farm Owner / Producer
+
+### Needs:
+
+* Problem-based solutions
+* Species-specific recommendations
+* Easy product understanding
+* Fast contact / consultation
+
+### Main interest:
+
+* Poultry, cattle, swine, aqua productivity & health
+
+---
+
+## Persona 2 — Veterinarian / Technical Advisor
+
+### Needs:
+
+* Composition
+* Mode of action
+* dosage
+* evidence
+* research support
+
+### Main interest:
+
+* Scientific validation
+* formulation logic
+* product efficacy
+
+---
+
+## Persona 3 — Distributor / Channel Partner
+
+### Needs:
+
+* product catalog
+* categories
+* business contact
+* territory discussion
+* commercial inquiry
+
+---
+
+## Persona 4 — International Buyer / Importer
+
+### Needs:
+
+* export readiness
+* certifications
+* documentation
+* manufacturing trust
+* partner inquiry flow
+
+---
+
+## Persona 5 — Job Applicant / Industry Professional
+
+### Needs:
+
+* company credibility
+* roles
+* team culture
+* application path
+
+---
+
+## Persona 6 — Consumer / Human Wellness Buyer (Secondary)
+
+### Needs:
+
+* product browsing
+* benefit clarity
+* trust and quality
+* clean D2C experience
+
+---
+
+# 6. PRODUCT POSITIONING
+
+Website ki positioning 5 pillars par honi chahiye:
+
+## Core Brand Pillars
+
+1. **Legacy**
+2. **Research**
+3. **Natural Science**
+4. **Multi-Species Solutions**
+5. **Global Trust**
+
+## Positioning Statement
+
+**Indian Herbs is a research-backed phytogenic animal healthcare company rooted in Ayurvedic wisdom and strengthened by modern science.**
+
+---
+
+# 7. SUCCESS METRICS / KPIs
+
+## Business KPIs
+
+* Monthly qualified inquiry leads
+* Distributor inquiry submissions
+* Export inquiry submissions
+* Product page engagement rate
+* Contact form conversion rate
+* Download conversions (brochures / catalog / certifications)
+* Careers applications submitted
+
+## UX / Product KPIs
+
+* Bounce rate reduction
+* Avg. session duration increase
+* Product discovery clicks
+* Species page engagement
+* Search usage
+* CTA click-through rate
+
+## SEO KPIs
+
+* organic traffic growth
+* indexed product pages
+* ranking on phytogenic / herbal animal health keywords
+* blog traffic
+
+---
+
+# 8. PROJECT SCOPE
+
+## In Scope
+
+* Full website redesign
+* Content architecture
+* UI/UX design
+* Product discovery system
+* Research & certification storytelling
+* Contact and inquiry workflows
+* Careers module
+* Export / partner module
+* Blog / knowledge hub
+* CMS-ready content structure
+
+## Out of Scope (Phase 1)
+
+* Full ecommerce checkout optimization
+* customer portal
+* distributor login panel
+* live multilingual engine
+* ERP/CRM deep sync (unless planned)
+* prescription workflow / doctor login
+
+---
+
+# 9. RECOMMENDED WEBSITE ARCHITECTURE / SITEMAP
+
+## Primary Navigation
+
+1. Home
+2. About Us
+3. Products
+4. Solutions / Species
+5. Research & Innovation
+6. Certifications & Quality
+7. Global / Export
+8. Media / Knowledge Hub
+9. Careers
+10. Contact Us
+
+## Secondary / Utility Pages
+
+* Leadership / Team
+* Downloads Center
+* FAQs
+* Patents / Publications
+* Distributor / Partner Inquiry
+* Privacy Policy
+* Terms & Conditions
+* Shipping / Refund (if ecommerce retained)
+* Search Results
+
+---
+
+# 10. INFORMATION ARCHITECTURE (PAGE-WISE)
+
+---
+
+# PAGE 1 — HOME
+
+## Objective
+
+* establish brand trust
+* showcase breadth
+* guide discovery
+* generate inquiries
+
+## Theme
+
+**Nature + Science + Legacy + Solutions**
+
+## Key Sections
+
+1. Hero Banner
+2. Trust Stats
+3. Who We Are
+4. Browse by Species
+5. Featured Solutions
+6. Why Choose Indian Herbs
+7. Research & Innovation Highlight
+8. Certifications Snapshot
+9. Global Presence
+10. Testimonials / Proof
+11. Latest Articles / Events
+12. CTA / Inquiry Form
+13. Footer
+
+## Primary CTAs
+
+* Explore Products
+* Talk to Our Team
+* Export Inquiry
+* Request Consultation
+
+## UX Notes
+
+* Hero above fold should instantly answer:
+
+  * who are we?
+  * what do we do?
+  * why trust us?
+* Homepage must be built for both **B2B** and **brand credibility**
+
+---
+
+# PAGE 2 — ABOUT US
+
+## Objective
+
+* tell the company story
+* show legacy
+* explain philosophy and differentiation
+
+## Sections
+
+1. About Hero
+2. Company Story
+3. Founder Legacy
+4. Mission / Vision / Philosophy
+5. Timeline / Journey
+6. Why Indian Herbs
+7. Sustainability & Impact
+8. CTA to Products / Research
+
+## Content Inputs
+
+Current site already provides strong public content around:
+
+* founder legacy
+* 1951 origin
+* “Nature’s Way to Animal Health”
+* Ayurveda + modern science
+* sustainable and affordable solutions ([Indian Herbs][2])
+
+---
+
+# PAGE 3 — LEADERSHIP / TEAM
+
+## Objective
+
+* humanize the company
+* build executive credibility
+* improve trust for buyers and talent
+
+## Sections
+
+1. Leadership Intro
+2. Founder Legacy
+3. Directors / Executive Team
+4. Functional Heads
+5. Team Culture Snapshot
+
+## Fields Per Leader
+
+* Name
+* Photo
+* Designation
+* Short Bio
+* Expertise Area
+* LinkedIn (optional)
+
+## Requirement
+
+This page should be built but content must be **internally approved**, because current public site only hints at a “Board of Directors” section rather than fully surfaced biographies. ([Indian Herbs][2])
+
+---
+
+# PAGE 4 — PRODUCTS
+
+## Objective
+
+* central product directory
+* enable browsing and filtering
+* support B2B inquiry
+
+## Sections
+
+1. Products Hero
+2. Search + Filters
+3. Browse by Species
+4. Browse by Need
+5. Browse by Product Type
+6. Product Grid
+7. Download Catalog CTA
+
+## Required Filters
+
+* Species
+* Health Concern
+* Product Type
+* Form
+* Market (Animal / Human)
+* Use Case
+
+## Product Discovery UX
+
+Products should be browsable in 3 ways:
+
+1. By Species
+2. By Need / Problem
+3. By Product Category
+
+Current website already shows a category/store structure and product collection architecture, but it should be reworked into a cleaner enterprise-grade catalog UX. ([Indian Herbs][3])
+
+---
+
+# PAGE 5 — PRODUCT DETAIL PAGE (PDP)
+
+## Objective
+
+* educate user
+* build trust
+* drive inquiries
+
+## Sections
+
+1. Product Hero
+2. Key Benefits
+3. Product Summary
+4. When to Use
+5. Composition / Ingredients
+6. Mode of Action
+7. Dosage / Administration
+8. Packaging
+9. FAQs
+10. Related Products
+11. Inquiry CTA
+12. Download Brochure / TDS
+
+## Optional Technical Modules
+
+* Research evidence
+* field trial summary
+* scientific references
+* label download
+
+---
+
+# PAGE 6 — SOLUTIONS / SPECIES PAGES
+
+## Objective
+
+* organize products around real-world use cases
+* solve buyer problems, not just list SKUs
+
+## Required Pages
+
+* Poultry Solutions
+* Ruminant / Cattle Solutions
+* Swine Solutions
+* Aqua Solutions
+* Pet Solutions
+* Equine Solutions
+* Camel Solutions (optional if strategic)
+* Human Wellness (if retained in same ecosystem)
+
+## Common Structure
+
+1. Hero
+2. Industry Challenges
+3. Indian Herbs Approach
+4. Recommended Categories
+5. Featured Products
+6. Case Outcomes / Proof
+7. FAQs
+8. Inquiry CTA
+
+## Benefit
+
+This section helps both SEO and conversion by targeting **problem-intent traffic**.
+
+---
+
+# PAGE 7 — RESEARCH & INNOVATION
+
+## Objective
+
+* show scientific depth
+* establish premium differentiation
+* support enterprise trust
+
+## Sections
+
+1. Research Hero
+2. R&D Philosophy
+3. Research Divisions
+4. Lab Infrastructure
+5. Scientific Methods
+6. Research Outputs
+7. Publications / Patents / Collaborations
+8. Downloadable Library
+
+## Research Divisions to Feature
+
+* Phytochemistry
+* Analytical & Instrumentation
+* Formulation Development
+* Microbiology
+* Pharmacology & Toxicology
+
+## Lab / Capability Modules
+
+* HPLC
+* HPTLC
+* GC-MS-QQQ
+* AAS
+* UV-Visible
+* ELISA
+* Clinical Analyzer
+
+Current public research pages already mention these divisions, equipment, and scientific areas such as nutrigenomics, metagenomics, transcriptomics, microbiota modulation, antimicrobial reduction, etc. This page should become a flagship credibility page. ([Indian Herbs][4])
+
+---
+
+# PAGE 8 — CERTIFICATIONS & QUALITY
+
+## Objective
+
+* de-risk the buyer decision
+* support export / distributor / institutional trust
+
+## Sections
+
+1. Quality Hero
+2. Quality Philosophy
+3. Manufacturing Standards
+4. QA / QC Systems
+5. Certifications Gallery
+6. Download Certificates
+7. FAQ / Traceability / Safety
+
+## Suggested Certificates (publish only after internal validation)
+
+* FAMI-QS
+* ISO 9001
+* ISO 14001
+* ISO 22000
+* ISO 45001
+* FSSAI
+* GMP
+* HACCP
+* EIC
+* Export House
+* R&D Recognition
+
+Current About page publicly links and names these certifications, so the new site should structure them into a dedicated trust page. ([Indian Herbs][2])
+
+---
+
+# PAGE 9 — GLOBAL / EXPORT
+
+## Objective
+
+* convert importers / global distributors
+* communicate export readiness
+
+## Sections
+
+1. Export Hero
+2. Why Partner With Us
+3. Global Presence Map
+4. Product Categories for Export
+5. Compliance / Documentation Support
+6. Partner Inquiry Form
+7. FAQs
+
+## Form Fields
+
+* Name
+* Company
+* Country
+* Business Type
+* Product Interest
+* Volume Requirement
+* Regulatory Need
+* Message
+
+---
+
+# PAGE 10 — MEDIA / KNOWLEDGE HUB
+
+## Objective
+
+* improve SEO
+* build topical authority
+* publish research/news/events
+
+## Content Types
+
+* Blogs
+* Technical Articles
+* News & Events
+* Webinars
+* Case Studies
+* Research Highlights
+
+## Structure
+
+1. Media Hero
+2. Category Filters
+3. Featured Articles
+4. Event Posts
+5. Downloadables
+6. Newsletter CTA
+
+Current site already publishes articles, events, and category-led content, so this section should evolve into a structured content engine rather than a passive update feed. ([Indian Herbs][2])
+
+---
+
+# PAGE 11 — CAREERS
+
+## Objective
+
+* attract talent
+* improve employer branding
+* support recruitment flow
+
+## Sections
+
+1. Careers Hero
+2. Why Work With Us
+3. Culture / Team
+4. Open Roles
+5. Job Detail Cards
+6. Application Form
+7. Employee Stories (optional)
+
+## Required Role Filters
+
+* Sales
+* Marketing
+* R&D
+* Quality
+* Operations
+* Export
+* Corporate
+
+Current careers page already surfaces roles such as Marketing Manager and Senior Manager – Sales, with reporting structures, qualifications, and Noida location. New site should make this cleaner and more employer-brand oriented. ([Indian Herbs][5])
+
+---
+
+# PAGE 12 — CONTACT US
+
+## Objective
+
+* route inquiries correctly
+* reduce friction
+* support multiple business intents
+
+## Sections
+
+1. Contact Hero
+2. Inquiry Type Cards
+3. Main Contact Form
+4. Office Locations
+5. Contact Details
+6. FAQ / Response Time
+
+## Inquiry Types
+
+* Product Inquiry
+* Distributor Inquiry
+* Export Inquiry
+* Careers Inquiry
+* General Inquiry
+
+## Required Fields
+
+* Name
+* Company
+* Country
+* Email
+* Phone
+* Species / Category
+* Requirement Type
+* Message
+
+Current public site exposes contact info and office/contact pathways; the new site should convert this into a more structured lead routing system. ([Indian Herbs][6])
+
+---
+
+# 11. FUNCTIONAL REQUIREMENTS
+
+## 11.1 Navigation
+
+* Sticky header
+* desktop mega menu
+* mobile hamburger navigation
+* breadcrumb support on internal pages
+* search icon globally accessible
+
+## 11.2 Product Discovery
+
+* faceted filtering
+* search autocomplete
+* related products
+* species/category tags
+* downloadable product PDFs
+
+## 11.3 Forms
+
+All forms must include:
+
+* validation
+* spam protection
+* thank-you state
+* CRM/email integration
+* optional hidden tracking fields (source / campaign)
+
+## 11.4 CMS Requirements
+
+Content should be manageable via CMS for:
+
+* blogs
+* products
+* species pages
+* jobs
+* certifications
+* testimonials
+* leadership profiles
+
+## 11.5 Search
+
+Global search should support:
+
+* products
+* pages
+* blogs
+* FAQs
+
+## 11.6 Downloads
+
+Admin should be able to upload:
+
+* brochures
+* technical sheets
+* certifications
+* research PDFs
+* catalogs
+
+## 11.7 Careers Module
+
+* job listing system
+* role detail page
+* resume upload
+* location filters
+
+## 11.8 Contact / Lead Routing
+
+Different forms should route to different inboxes / teams:
+
+* sales
+* export
+* HR
+* customer support
+* general
+
+---
+
+# 12. NON-FUNCTIONAL REQUIREMENTS
+
+## Performance
+
+* fast page load
+* mobile optimized
+* compressed images
+* lazy loading
+* core web vitals friendly
+
+## Security
+
+* SSL
+* form security
+* spam protection
+* secure file uploads
+* admin role access control
+
+## SEO
+
+* schema-ready
+* meta title / description control
+* indexable product pages
+* clean URL structure
+* internal linking
+* sitemap.xml
+* robots.txt
+
+## Accessibility
+
+* readable contrast
+* alt tags
+* keyboard navigability
+* semantic headings
+* mobile readability
+
+---
+
+# 13. BRAND / UI DIRECTION
+
+## Visual Personality
+
+**Scientific + Natural + Premium + Trustworthy + Global**
+
+## Brand Color System
+
+### Primary
+
+* Deep Herbal Green — `#1F5E3B`
+* Leaf Green — `#5E9F52`
+* Clinical Teal — `#1E7C7A`
+
+### Support
+
+* Warm Beige — `#F4EBDD`
+* Off White — `#FAFAF7`
+* Soft Grey — `#E9ECE8`
+* Charcoal — `#1F2933`
+
+### Accent
+
+* Gold — `#C89A3D`
+
+## Typography
+
+### Headings
+
+* Manrope / Plus Jakarta Sans / Poppins
+
+### Body
+
+* Inter / DM Sans / Source Sans
+
+## UI Style
+
+* spacious layouts
+* rounded premium cards
+* minimal gradients
+* icon-led sections
+* clean enterprise forms
+* subtle motion
+
+## Avoid
+
+* cluttered herbal-store aesthetic
+* too much dark green
+* stock-heavy visual overload
+* low-trust ecommerce look
+
+---
+
+# 14. CONTENT REQUIREMENTS
+
+## Content Tone
+
+* Scientific but understandable
+* Global B2B ready
+* Evidence-backed
+* Trustworthy
+* Not overly “spiritual Ayurveda”
+* More “nature-inspired science”
+
+## Writing Guidelines
+
+Avoid overclaim-heavy copy like:
+
+* “No.1”
+* “best in world”
+* “world class”
+  unless verified and strategically approved.
+
+Use stronger, cleaner language like:
+
+* Research-backed phytogenic solutions
+* Evidence-led herbal animal health
+* Sustainable productivity support
+* Nature-inspired, science-validated formulations
+
+---
+
+# 15. SEO REQUIREMENTS
+
+## Primary SEO Clusters
+
+* herbal animal healthcare
+* phytogenic feed supplements
+* poultry herbal supplements
+* cattle herbal supplements
+* veterinary herbal products
+* natural animal health products
+* herbal pet supplements
+* animal feed supplement manufacturer
+* phytogenic products for livestock
+
+## SEO Page Priorities
+
+1. Home
+2. Products
+3. Species pages
+4. Research page
+5. Blog / Media
+6. Export page
+
+## On-Page SEO Needs
+
+* schema markup
+* FAQ schema
+* product schema (if supported)
+* internal linking
+* keyword clustering
+* H1/H2 structure
+* indexable content blocks
+
+---
+
+# 16. CONTENT GOVERNANCE / APPROVAL FLOW
+
+## Internal Content Approvals Needed From Client
+
+* final company story
+* founder narrative
+* leadership bios
+* certifications to publish
+* exact product descriptions
+* research assets
+* office/contact details
+* export claims
+* testimonials / partner logos
+
+## High-Risk Claims to Verify Before Publishing
+
+* patents count
+* country count
+* “global leader” statements
+* “No.1” claims
+* publication counts
+* certifications validity
+
+Current public pages show some strong marketing claims and even inconsistent patent counts across sections, so claim validation should be part of the content approval workflow. ([Indian Herbs][4])
+
+---
+
+# 17. TECH RECOMMENDATION
+
+## Recommended Build Options
+
+### Best for scale:
+
+* **Next.js / React + Headless CMS**
+  or
+* **WordPress (custom theme)**
+  or
+* **Webflow + CMS** (if content-heavy, lower engineering complexity)
+
+## My Recommendation
+
+If long-term scale, SEO, product catalog and performance important hain:
+
+> **Next.js + Sanity / Strapi / WordPress Headless**
+
+If fast marketing website chahiye:
+
+> **Webflow / Framer + CMS**
+
+If team traditional admin chahti hai:
+
+> **Custom WordPress**
+
+---
+
+# 18. ANALYTICS & TRACKING REQUIREMENTS
+
+## Must-have Tracking
+
+* GA4
+* Google Search Console
+* Meta Pixel (if ads planned)
+* LinkedIn Insight Tag (for B2B campaigns)
+* conversion events:
+
+  * contact submit
+  * export inquiry
+  * distributor inquiry
+  * brochure download
+  * job apply
+  * product inquiry click
+
+---
+
+# 19. PHASED DELIVERY PLAN
+
+## Phase 1 — Foundation Launch
+
+* Home
+* About
+* Products
+* Product Detail
+* Research
+* Contact
+* Core CMS
+* Basic SEO
+
+## Phase 2 — Trust & Growth
+
+* Leadership
+* Certifications
+* Export
+* Careers
+* Knowledge Hub
+* Species pages
+* Download Center
+
+## Phase 3 — Advanced Growth
+
+* gated downloads
+* multilingual
+* distributor portal
+* lead scoring
+* CRM automation
+* smart product recommendation tools
+
+---
+
+# 20. RISKS / DEPENDENCIES
+
+## Key Risks
+
+* incomplete product data
+* unverified claims
+* scattered media assets
+* unclear leadership approvals
+* certification documentation gaps
+* mixed B2B/B2C priorities
+
+## Key Dependencies
+
+* content approval from stakeholders
+* product database structure
+* design sign-off
+* photography / media assets
+* dev CMS decision
+* hosting / domain / admin access
+
+---
+
+# 21. FINAL RECOMMENDATION
+
+Agar is project ko ek line me summarize karna ho:
+
+> **Indian Herbs ki new website ko “Legacy + Research + Products + Trust + Export” in 5 pillars par build karna chahiye.**
+
+Aur agar sirf **3 most critical modules** pick karne hon, toh wo honge:
+
+### Top 3 must-win modules
+
+1. **Homepage trust architecture**
+2. **Product discovery + solution system**
+3. **Research & certifications trust layer**
+
+Yahi 3 cheezein website ko **normal herbal company site** se utha kar **global phytogenic animal healthcare brand platform** bana dengi.
+
+---
