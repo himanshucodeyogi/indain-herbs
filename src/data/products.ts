@@ -41,24 +41,14 @@ export const products: Product[] = [
     image: 'https://images.unsplash.com/photo-1516467508483-a7212febe31a?auto=format&fit=crop&q=80&w=600'
   },
   {
-    id: 'liv-52-vet',
-    name: 'Liv.52 Vet',
-    species: ['poultry', 'ruminant', 'aqua', 'pet'],
-    category: 'Liver Care',
-    tagline: 'The Gold Standard in Liver Health',
-    description: 'The world\'s most researched liver tonic that protects the liver against toxins and improves appetite.',
-    benefits: ['Protects against mycotoxins', 'Improves digestion', 'Faster recovery from illness'],
-    image: 'https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80&w=600'
-  },
-  {
-    id: 'nefrosave',
-    name: 'NefroSave',
-    species: ['poultry'],
-    category: 'Kidney Care',
-    tagline: 'Comprehensive Renal Support',
-    description: 'A potent herbal formulation designed to support kidney function and maintain electrolyte balance.',
-    benefits: ['Prevents visceral gout', 'Diuretic action', 'Supports renal health'],
-    image: 'https://images.unsplash.com/photo-1599403213059-86927d264379?auto=format&fit=crop&q=80&w=600'
+    id: 'nefroliv-human',
+    name: 'NefroLiv',
+    species: ['human'],
+    category: 'Renal Care',
+    tagline: 'Comprehensive Kidney Support',
+    description: 'A potent herbal supplement designed for human renal health, acting as a reno-protective and diuretic agent.',
+    benefits: ['Supports kidney function', 'Natural diuretic', 'Prevents stone formation'],
+    image: 'https://indianherbs.org/cdn/shop/products/NefroLiv_Capsules_Front_1024x1024.jpg'
   },
   {
     id: 'himax-ointment',
@@ -68,37 +58,17 @@ export const products: Product[] = [
     tagline: 'Broad-Spectrum Antiseptic Ointment',
     description: 'A highly effective herbal ointment for various skin conditions, wounds, and fungal infections in animals.',
     benefits: ['Fast wound healing', 'Anti-fungal properties', 'Effective against maggots'],
-    image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=600'
+    image: 'https://shakehands.co.in/media/catalog/product/h/i/himax_ointment_50g_1.jpg'
   },
   {
-    id: 'nebion',
-    name: 'Neblon',
-    species: ['ruminant'],
-    category: 'Digestive Health',
-    tagline: 'Effective Anti-Diarrhoeal Powder',
-    description: 'A time-tested herbal formulation to control diarrhoea and restore normal gut function in livestock.',
-    benefits: ['Controls loose motion fast', 'Restores gut microflora', 'Safe and non-toxic'],
-    image: 'https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&q=80&w=600'
-  },
-  {
-    id: 'skinheal-pet',
-    name: 'SkinHeal Pet',
-    species: ['pet'],
-    category: 'Skin Care',
-    tagline: 'Herbal Wound Healing Spray',
-    description: 'A versatile spray for pets to treat wounds, skin infections, and keep pests away naturally.',
-    benefits: ['Soothes skin irritation', 'Promotes hair regrowth', 'Natural insect repellent'],
-    image: 'https://images.unsplash.com/photo-1535268647677-300dbf3d78d1?auto=format&fit=crop&q=80&w=600'
-  },
-  {
-    id: 'nefroliv-human',
-    name: 'NefroLiv',
+    id: 'teeburb-capsule',
+    name: 'Teeburb Capsule',
     species: ['human'],
-    category: 'Renal Care',
-    tagline: 'Comprehensive Kidney Support',
-    description: 'A potent herbal supplement designed for human renal health, acting as a reno-protective and diuretic agent.',
-    benefits: ['Supports kidney function', 'Natural diuretic', 'Prevents stone formation'],
-    image: 'https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?auto=format&fit=crop&q=80&w=600'
+    category: 'Skin Care',
+    tagline: 'Systemic Dermatological Support',
+    description: 'Herbal capsule for systemic management of various skin disorders and maintaining skin health from within.',
+    benefits: ['Blood purifier', 'Fights skin infections', 'Natural glow'],
+    image: 'https://5.imimg.com/data5/SELLER/Default/2021/9/XW/XG/XN/22276255/teeburb-capsule-500x500.jpg'
   },
   {
     id: 'galog-powder',
@@ -108,7 +78,7 @@ export const products: Product[] = [
     tagline: 'Natural Milk Yield Optimizer',
     description: 'A polyherbal formulation that helps in improving milk production and maintaining udder health.',
     benefits: ['Increases milk yield', 'Improves milk quality', 'Maintains peak lactation'],
-    image: 'https://images.unsplash.com/photo-1527153857715-3908f2bac5e8?auto=format&fit=crop&q=80&w=600'
+    image: 'https://indianherbs.org/cdn/shop/files/Galog_Powder_Front_1024x1024.jpg'
   },
   {
     id: 'immuplus-pet',
@@ -118,7 +88,27 @@ export const products: Product[] = [
     tagline: 'Natural Immune Potentiator',
     description: 'An effective herbal tonic to boost the natural defense mechanism of pets against infections and stress.',
     benefits: ['Enhances vaccine response', 'Fights recurring infections', 'Better recovery from illness'],
-    image: 'https://images.unsplash.com/photo-1544568100-847a948585b9?auto=format&fit=crop&q=80&w=600'
+    image: 'https://indianherbs.org/cdn/shop/products/ImmuPlus_Pet_Syrup_100ml_Front_1024x1024.jpg'
+  },
+  {
+    id: 'nebion',
+    name: 'Neblon',
+    species: ['ruminant'],
+    category: 'Digestive Health',
+    tagline: 'Effective Anti-Diarrhoeal Powder',
+    description: 'A time-tested herbal formulation to control diarrhoea and restore normal gut function in livestock.',
+    benefits: ['Controls loose motion fast', 'Restores gut microflora', 'Safe and non-toxic'],
+    image: 'https://indianherbs.org/cdn/shop/products/Neblon_Powder_100g_Front_1024x1024.jpg'
+  },
+  {
+    id: 'skinheal-pet',
+    name: 'SkinHeal Pet',
+    species: ['pet'],
+    category: 'Skin Care',
+    tagline: 'Herbal Wound Healing Spray',
+    description: 'A versatile spray for pets to treat wounds, skin infections, and keep pests away naturally.',
+    benefits: ['Soothes skin irritation', 'Promotes hair regrowth', 'Natural insect repellent'],
+    image: 'https://indianherbs.org/cdn/shop/products/SkinHeal_Pet_Spray_Front_1024x1024.jpg'
   },
   {
     id: 'cardipro',
@@ -128,6 +118,16 @@ export const products: Product[] = [
     tagline: 'Natural Lipid Regulator',
     description: 'A cardio-protective herbal formulation that helps manage blood fat levels and supports overall heart health.',
     benefits: ['Regulates cholesterol', 'Antioxidant support', 'Strengthens heart muscles'],
-    image: 'https://images.unsplash.com/photo-1505751172107-573966a04271?auto=format&fit=crop&q=80&w=600'
+    image: 'https://indianherbs.org/cdn/shop/products/CardiPro_Capsules_Front_1024x1024.jpg'
+  },
+  {
+    id: 'prajana-hs',
+    name: 'Prajana HS',
+    species: ['ruminant'],
+    category: 'Fertility',
+    tagline: 'Natural Oestrus Inducer',
+    description: 'A research-based herbal solution to improve reproductive efficiency and induce timely heat in livestock.',
+    benefits: ['Induces natural heat', 'Improves conception rate', 'Non-hormonal and safe'],
+    image: 'https://indianherbs.org/cdn/shop/products/Prajana_HS_Capsules_Front_1024x1024.jpg'
   }
 ];

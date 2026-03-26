@@ -1,5 +1,5 @@
 import React from 'react';
-import { Briefcase, Mail, Award } from 'lucide-react';
+import { Briefcase, Mail } from 'lucide-react';
 import './Leadership.css';
 
 const Leadership: React.FC = () => {

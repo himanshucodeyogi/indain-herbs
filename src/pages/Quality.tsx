@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShieldCheck, Award, FileText, CheckCircle } from 'lucide-react';
+import { Award, FileText, CheckCircle } from 'lucide-react';
 import './Quality.css';
 
 const Quality: React.FC = () => {
