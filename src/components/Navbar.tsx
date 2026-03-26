@@ -25,16 +25,7 @@ const Navbar: React.FC = () => {
               <Link to="/leadership">Leadership</Link>
             </div>
           </div>
-          <div className="nav-item dropdown">
-            <span>Products</span>
-            <div className="dropdown-menu">
-              <Link to="/products/poultry">Poultry</Link>
-              <Link to="/products/ruminant">Ruminant</Link>
-              <Link to="/products/aqua">Aqua</Link>
-              <Link to="/products/pet">Pet</Link>
-              <Link to="/products/equine">Equine</Link>
-            </div>
-          </div>
+          <Link to="/products" className="nav-item">Products</Link>
           <Link to="/research" className="nav-item">Research</Link>
           <Link to="/quality" className="nav-item">Quality</Link>
           <Link to="/global" className="nav-item">Global</Link>
