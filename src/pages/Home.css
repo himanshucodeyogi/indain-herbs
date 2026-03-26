@@ -69,6 +69,50 @@
   gap: 3rem;
 }
 
+.journey-video-section {
+  width: 100%;
+  position: relative;
+  background-color: #000;
+  overflow: hidden;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  line-height: 0;
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0,0,0,0.7), transparent);
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.video-overlay h2 {
+  color: white;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.video-overlay p {
+  color: white;
+  font-size: 1.5rem;
+  opacity: 0.9;
+  max-width: 500px;
+}
+
 .stat-item {
   display: flex;
   flex-direction: column;
@@ -218,6 +262,91 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+/* Certifications Banner */
+.certificate-banner {
+  position: relative;
+  padding: 5rem 0;
+  background-color: white;
+  overflow: hidden;
+}
+
+.certificate-inner {
+  position: relative;
+}
+
+.certificate-heading {
+  color: var(--primary-leaf);
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.certificate-medal {
+  position: absolute;
+  right: 10%;
+  top: -20px;
+  width: 5rem;
+  filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.15));
+  transform-origin: center;
+  animation: medal-float 4s ease-in-out infinite;
+  z-index: 2;
+}
+
+/* Modern marquee */
+.cert-marquee {
+  position: relative;
+  margin-top: 2rem;
+  padding-block: 2rem;
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, #000 15%, #000 85%, transparent);
+}
+
+.cert-track {
+  display: flex;
+  width: max-content;
+  align-items: center;
+  animation: cert-scroll 40s linear infinite;
+}
+
+.cert-row {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  padding-inline: 2.5rem;
+}
+
+.cert-item {
+  flex: 0 0 auto;
+}
+
+.cert-logo {
+  width: 12rem;
+  height: auto;
+  display: block;
+  filter: grayscale(1) opacity(0.6);
+  transition: all 0.4s ease;
+}
+
+.cert-item:hover .cert-logo {
+  filter: grayscale(0) opacity(1);
+  transform: scale(1.1);
+}
+
+.cert-marquee:hover .cert-track {
+  animation-play-state: paused;
+}
+
+/* Animations */
+@keyframes cert-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes medal-float {
+  0% { transform: translateY(0) rotate(-4deg); }
+  50% { transform: translateY(-10px) rotate(4deg); }
+  100% { transform: translateY(0) rotate(-4deg); }
 }
 
 @media (max-width: 992px) {

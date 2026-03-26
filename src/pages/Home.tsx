@@ -45,6 +45,27 @@ const Home: React.FC = () => {
         </div>
       </section>
 
+      {/* Team Journey Video Section */}
+      <section className="journey-video-section">
+        <div className="video-container">
+          <video 
+            src="https://cdn.shopify.com/videos/c/o/v/79eb724a3118495a975909d672262c84.mp4" 
+            width="100%" 
+            loop 
+            muted 
+            playsInline 
+            autoPlay
+          >
+          </video>
+          <div className="video-overlay">
+            <div className="container">
+              <h2>Our Scientific Journey</h2>
+              <p>70+ years of dedicated research and innovation in animal health.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Trust Pillars */}
       <section className="section-padding trust-pillars">
         <div className="container grid-4">
@@ -96,6 +117,42 @@ const Home: React.FC = () => {
                 <a href={`/products/${species.name.toLowerCase()}`} className="text-link">View Solutions <ArrowRight size={16} /></a>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Certifications Section */}
+      <section className="certificate-banner">
+        <div className="container certificate-inner text-center">
+          <h2 className="certificate-heading">Our Certifications</h2>
+          
+          <img 
+            className="certificate-medal" 
+            src="//indianherbs.org/cdn/shop/t/17/assets/medal%20(2).png?v=97669434962686117161743826349" 
+            alt="Medal icon" 
+          />
+
+          <div className="cert-marquee">
+            <div className="cert-track">
+              {/* First set of logos */}
+              <div className="cert-row">
+                <div className="cert-item"><img className="cert-logo" src="//indianherbs.org/cdn/shop/t/17/assets/Group%2041719.png?v=99183726171040853271743826349" alt="Certification 1" /></div>
+                <div className="cert-item"><img className="cert-logo" src="//indianherbs.org/cdn/shop/t/17/assets/Group%2041717.png?v=178790418304253078971743826349" alt="Certification 2" /></div>
+                <div className="cert-item"><img className="cert-logo" src="//indianherbs.org/cdn/shop/t/17/assets/Group%2041718.png?v=53245427707705332541743826349" alt="Certification 3" /></div>
+                <div className="cert-item"><img className="cert-logo" src="//indianherbs.org/cdn/shop/t/17/assets/Frame%20164.png?v=123893048401423845441743826349" alt="Certification 4" /></div>
+                <div className="cert-item"><img className="cert-logo" src="//indianherbs.org/cdn/shop/t/17/assets/Frame%20165.png?v=79374991280251275721743826349" alt="Certification 5" /></div>
+                <div className="cert-item"><img className="cert-logo" src="//indianherbs.org/cdn/shop/t/17/assets/Frame%20166.png?v=53268785353370023791743826349" alt="Certification 6" /></div>
+              </div>
+              {/* Duplicate set for seamless loop */}
+              <div className="cert-row">
+                <div className="cert-item"><img className="cert-logo" src="//indianherbs.org/cdn/shop/t/17/assets/Group%2041719.png?v=99183726171040853271743826349" alt="Certification 1" /></div>
+                <div className="cert-item"><img className="cert-logo" src="//indianherbs.org/cdn/shop/t/17/assets/Group%2041717.png?v=178790418304253078971743826349" alt="Certification 2" /></div>
+                <div className="cert-item"><img className="cert-logo" src="//indianherbs.org/cdn/shop/t/17/assets/Group%2041718.png?v=53245427707705332541743826349" alt="Certification 3" /></div>
+                <div className="cert-item"><img className="cert-logo" src="//indianherbs.org/cdn/shop/t/17/assets/Frame%20164.png?v=123893048401423845441743826349" alt="Certification 4" /></div>
+                <div className="cert-item"><img className="cert-logo" src="//indianherbs.org/cdn/shop/t/17/assets/Frame%20165.png?v=79374991280251275721743826349" alt="Certification 5" /></div>
+                <div className="cert-item"><img className="cert-logo" src="//indianherbs.org/cdn/shop/t/17/assets/Frame%20166.png?v=53268785353370023791743826349" alt="Certification 6" /></div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
